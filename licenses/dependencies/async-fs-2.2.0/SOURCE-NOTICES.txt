@@ -1,0 +1,620 @@
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Copies a file to a new location.
+///
+/// On success, the total number of bytes copied is returned and equals the length of the `dst`
+/// file after this operation.
+///
+/// The old contents of `dst` will be overwritten. If `src` and `dst` both point to the same
+/// file, then the file will likely get truncated as a result of this operation.
+///
+/// If you're working with open [`File`]s and want to copy contents through those types, use
+/// [`futures_lite::io::copy()`] instead.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `src` does not point to an existing file.
+/// * The current process lacks permissions to read `src` or write `dst`.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// let num_bytes = async_fs::copy("a.txt", "b.txt").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Creates a new, empty directory at the provided path
+///
+/// # Platform-specific behavior
+///
+/// This function currently corresponds to the `mkdir` function on Unix
+/// and the `CreateDirectory` function on Windows.
+/// Note that, this [may change in the future][changes].
+///
+/// [changes]: io#platform-specific-behavior
+///
+/// **NOTE**: If a parent of the given path doesn't exist, this function will
+/// return an error. To create a directory and all its missing parents at the
+/// same time, use the [`create_dir_all`] function.
+///
+/// # Errors
+///
+/// This function will return an error in the following situations, but is not
+/// limited to just these cases:
+///
+/// * User lacks permissions to create directory at `path`.
+/// * A parent of the given path doesn't exist. (To create a directory and all
+///   its missing parents at the same time, use the [`create_dir_all`]
+///   function.)
+/// * `path` already exists.
+///
+/// # Examples
+///
+/// ```no_run
+/// use std::fs;
+///
+/// fn main() -> std::io::Result<()> {
+///     fs::create_dir("/some/dir")?;
+///     Ok(())
+/// }
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Reads metadata for a path.
+///
+/// This function will traverse symbolic links to read metadata for the target file or directory.
+/// If you want to read metadata without following symbolic links, use [`symlink_metadata()`]
+/// instead.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing file or directory.
+/// * The current process lacks permissions to read metadata for the path.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// let perm = async_fs::metadata("a.txt").await?.permissions();
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Reads the entire contents of a file as raw bytes.
+///
+/// This is a convenience function for reading entire files. It pre-allocates a buffer based on the
+/// file size when available, so it is typically faster than manually opening a file and reading
+/// from it.
+///
+/// If you want to read the contents as a string, use [`read_to_string()`] instead.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing file.
+/// * The current process lacks permissions to read the file.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// let contents = async_fs::read("a.txt").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Returns a stream of entries in a directory.
+///
+/// The stream yields items of type [`io::Result`]`<`[`DirEntry`]`>`. Note that I/O errors can
+/// occur while reading from the stream.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing directory.
+/// * The current process lacks permissions to read the contents of the directory.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// use futures_lite::stream::StreamExt;
+///
+/// let mut entries = async_fs::read_dir(".").await?;
+///
+/// while let Some(entry) = entries.try_next().await? {
+///     println!("{}", entry.file_name().to_string_lossy());
+/// }
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Reads the metadata for this entry.
+    ///
+    /// This function will traverse symbolic links to read the metadata.
+    ///
+    /// If you want to read metadata without following symbolic links, use [`symlink_metadata()`]
+    /// instead.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * This entry does not point to an existing file or directory anymore.
+    /// * The current process lacks permissions to read the metadata.
+    /// * Some other I/O error occurred.
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use futures_lite::stream::StreamExt;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// let mut dir = async_fs::read_dir(".").await?;
+    ///
+    /// while let Some(entry) = dir.try_next().await? {
+    ///     println!("{:?}", entry.metadata().await?);
+    /// }
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Reads the file type for this entry.
+    ///
+    /// This function will not traverse symbolic links if this entry points at one.
+    ///
+    /// If you want to read metadata with following symbolic links, use [`metadata()`] instead.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * This entry does not point to an existing file or directory anymore.
+    /// * The current process lacks permissions to read this entry's metadata.
+    /// * Some other I/O error occurred.
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use futures_lite::stream::StreamExt;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// let mut dir = async_fs::read_dir(".").await?;
+    ///
+    /// while let Some(entry) = dir.try_next().await? {
+    ///     println!("{:?}", entry.file_type().await?);
+    /// }
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Reads the entire contents of a file as a string.
+///
+/// This is a convenience function for reading entire files. It pre-allocates a string based on the
+/// file size when available, so it is typically faster than manually opening a file and reading
+/// from it.
+///
+/// If you want to read the contents as raw bytes, use [`read()`] instead.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing file.
+/// * The current process lacks permissions to read the file.
+/// * The contents of the file cannot be read as a UTF-8 string.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// let contents = async_fs::read_to_string("a.txt").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Removes an empty directory.
+///
+/// Note that this function can only delete an empty directory. If you want to delete a directory
+/// and all of its contents, use [`remove_dir_all()`] instead.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` is not an existing and empty directory.
+/// * The current process lacks permissions to remove the directory.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// async_fs::remove_dir("./some/directory").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Removes a directory and all of its contents.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` is not an existing directory.
+/// * The current process lacks permissions to remove the directory.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// async_fs::remove_dir_all("./some/directory").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Removes a file.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing file.
+/// * The current process lacks permissions to remove the file.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// async_fs::remove_file("a.txt").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Renames a file or directory to a new location.
+///
+/// If a file or directory already exists at the target location, it will be overwritten by this
+/// operation.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `src` does not point to an existing file or directory.
+/// * `src` and `dst` are on different filesystems.
+/// * The current process lacks permissions to do the rename operation.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// async_fs::rename("a.txt", "b.txt").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Changes the permissions of a file or directory.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing file or directory.
+/// * The current process lacks permissions to change attributes on the file or directory.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// let mut perm = async_fs::metadata("a.txt").await?.permissions();
+/// perm.set_readonly(true);
+/// async_fs::set_permissions("a.txt", perm).await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Reads metadata for a path without following symbolic links.
+///
+/// If you want to follow symbolic links before reading metadata of the target file or directory,
+/// use [`metadata()`] instead.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * `path` does not point to an existing file or directory.
+/// * The current process lacks permissions to read metadata for the path.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// let perm = async_fs::symlink_metadata("a.txt").await?.permissions();
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+/// Writes a slice of bytes as the new contents of a file.
+///
+/// This function will create a file if it does not exist, and will entirely replace its contents
+/// if it does.
+///
+/// # Errors
+///
+/// An error will be returned in the following situations:
+///
+/// * The file's parent directory does not exist.
+/// * The current process lacks permissions to write to the file.
+/// * Some other I/O error occurred.
+///
+/// # Examples
+///
+/// ```no_run
+/// # futures_lite::future::block_on(async {
+/// async_fs::write("a.txt", b"Hello world!").await?;
+/// # std::io::Result::Ok(()) });
+/// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Sets the option for recursive mode.
+    ///
+    /// When set to `true`, this option means all parent directories should be created recursively
+    /// if they don't exist. Parents are created with the same permissions as the final directory.
+    ///
+    /// This option is initially set to `false`.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use async_fs::DirBuilder;
+    ///
+    /// let mut builder = DirBuilder::new();
+    /// builder.recursive(true);
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Creates a directory with the configured options.
+    ///
+    /// It is considered an error if the directory already exists unless recursive mode is enabled.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * `path` already points to an existing file or directory.
+    /// * The current process lacks permissions to create the directory or its missing parents.
+    /// * Some other I/O error occurred.
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use async_fs::DirBuilder;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// DirBuilder::new()
+    ///     .recursive(true)
+    ///     .create("./some/directory")
+    ///     .await?;
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Opens a file in read-only mode.
+    ///
+    /// See the [`OpenOptions::open()`] function for more options.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * `path` does not point to an existing file.
+    /// * The current process lacks permissions to read the file.
+    /// * Some other I/O error occurred.
+    ///
+    /// For more details, see the list of errors documented by [`OpenOptions::open()`].
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use async_fs::File;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// let file = File::open("a.txt").await?;
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Opens a file in write-only mode.
+    ///
+    /// This method will create a file if it does not exist, and will truncate it if it does.
+    ///
+    /// See the [`OpenOptions::open`] function for more options.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * The file's parent directory does not exist.
+    /// * The current process lacks permissions to write to the file.
+    /// * Some other I/O error occurred.
+    ///
+    /// For more details, see the list of errors documented by [`OpenOptions::open()`].
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use async_fs::File;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// let file = File::create("a.txt").await?;
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Changes the permissions on the file.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * The current process lacks permissions to change attributes on the file.
+    /// * Some other I/O error occurred.
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use async_fs::File;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// let file = File::create("a.txt").await?;
+    ///
+    /// let mut perms = file.metadata().await?.permissions();
+    /// perms.set_readonly(true);
+    /// file.set_permissions(perms).await?;
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+    /// Opens a file with the configured options.
+    ///
+    /// # Errors
+    ///
+    /// An error will be returned in the following situations:
+    ///
+    /// * The file does not exist and neither [`create`] nor [`create_new`] were set.
+    /// * The file's parent directory does not exist.
+    /// * The current process lacks permissions to open the file in the configured mode.
+    /// * The file already exists and [`create_new`] was set.
+    /// * Invalid combination of options was used, like [`truncate`] was set but [`write`] wasn't,
+    ///   or none of [`read`], [`write`], and [`append`] modes was set.
+    /// * An OS-level occurred, like too many files are open or the file name is too long.
+    /// * Some other I/O error occurred.
+    ///
+    /// [`read`]: `OpenOptions::read()`
+    /// [`write`]: `OpenOptions::write()`
+    /// [`append`]: `OpenOptions::append()`
+    /// [`truncate`]: `OpenOptions::truncate()`
+    /// [`create`]: `OpenOptions::create()`
+    /// [`create_new`]: `OpenOptions::create_new()`
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use async_fs::OpenOptions;
+    ///
+    /// # futures_lite::future::block_on(async {
+    /// let file = OpenOptions::new()
+    ///     .read(true)
+    ///     .open("a.txt")
+    ///     .await?;
+    /// # std::io::Result::Ok(()) });
+    /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+        /// Sets the mode bits that a new file will be created with.
+        ///
+        /// If a new file is created as part of an [`OpenOptions::open()`] call then this
+        /// specified `mode` will be used as the permission bits for the new file.
+        ///
+        /// If no `mode` is set, the default of `0o666` will be used.
+        /// The operating system masks out bits with the system's `umask`, to produce
+        /// the final permissions.
+        ///
+        /// # Examples
+        ///
+        /// ```no_run
+        /// use async_fs::{OpenOptions, unix::OpenOptionsExt};
+        ///
+        /// # futures_lite::future::block_on(async {
+        /// let mut options = OpenOptions::new();
+        /// // Read/write permissions for owner and read permissions for others.
+        /// options.mode(0o644);
+        /// let file = options.open("foo.txt").await?;
+        /// # std::io::Result::Ok(()) });
+        /// ```
+
+
+Upstream file: async-fs-2.2.0/src/lib.rs
+
+        /// Overrides the `dwDesiredAccess` argument to the call to [`CreateFile`]
+        /// with the specified value.
+        ///
+        /// This will override the `read`, `write`, and `append` flags on the
+        /// [`OpenOptions`] structure. This method provides fine-grained control over
+        /// the permissions to read, write and append data, attributes (like hidden
+        /// and system), and extended attributes.
+        ///
+        /// # Examples
+        ///
+        /// ```no_run
+        /// use async_fs::{OpenOptions, windows::OpenOptionsExt};
+        ///
+        /// # futures_lite::future::block_on(async {
+        /// // Open without read and write permission, for example if you only need
+        /// // to call `stat` on the file
+        /// let file = OpenOptions::new().access_mode(0).open("foo.txt").await?;
+        /// # std::io::Result::Ok(()) });
+        /// ```
+        ///
+        /// [`CreateFile`]: https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea
+

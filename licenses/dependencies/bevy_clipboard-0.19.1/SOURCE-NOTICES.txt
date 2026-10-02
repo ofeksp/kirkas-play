@@ -1,0 +1,59 @@
+Upstream file: bevy_clipboard-0.19.1/src/lib.rs
+
+//! This crate provides a platform-agnostic interface for accessing the clipboard.
+//!
+//! Read (and write) to the [`Clipboard`] resource to interact with the system clipboard.
+//!
+//! Note that this crate is deliberately low-level with minimal dependencies:
+//! it does not provide any input integration for clipboard operations,
+//! such as Ctrl+C/Ctrl+V support.
+//!
+//! This should be provided by other crates (or your own systems) which depend on `bevy_clipboard`,
+//! such as `bevy_ui_widgets` in the case of text editing.
+//!
+//! `bevy_clipboard`'s primary advantage over using [`arboard`](https://crates.io/crates/arboard) directly is that
+//! it provides a consistent API across all platforms, with a simple but robust fallback when `arboard`
+//! is not available or clipboard permissions are not granted.
+//!
+//! ## Platform support
+//!
+//! On Android and iOS, `arboard` is not available and the `system_clipboard` feature has no
+//! effect. The [`Clipboard`] resource still works, but reads and writes go to an in-process
+//! buffer that is invisible to other applications and does not survive process exit.
+//!
+//! On Windows and Unix, clipboard operations are performed synchronously and results are
+//! available immediately. On wasm32, results are accessed via [`ClipboardRead`], which can
+//! be polled for completion.
+//!
+//! Images are supported on Windows and Unix when the `image` feature is enabled, which depends on `system_clipboard`.
+//! Image support is not available on wasm32, Android, or iOS.
+
+
+Upstream file: bevy_clipboard-0.19.1/src/lib.rs
+
+/// A resource which provides access to the system clipboard.
+///
+/// Use [`Clipboard::fetch_text`] to read text from the clipboard,
+/// and [`Clipboard::set_text`] to write text to the clipboard.
+///
+/// ## Warning: `system_clipboard` support is off-by-default
+///
+/// When the `system_clipboard` feature is disabled, operations read from and write to
+/// an in-process [`String`] buffer rather than the clipboard provided by the operating system.
+/// This means that you will not be able to copy and paste between your application and other applications,
+/// and clipboard contents will not persist after your application exits.
+/// This is a secure-by-default setup, but is not correct for many applications which require clipboard functionality.
+///
+/// The fallback is intended to allow clipboard functionality on platforms where `arboard` is not available (e.g. Android, iOS),
+/// and to allow applications to have basic clipboard-like functionality without requiring enhanced permissions.
+///
+/// ## Warning: multithreading deadlock risks
+///
+/// As the [`arboard`] documentation [warns](https://docs.rs/arboard/latest/arboard/struct.Clipboard.html#windows),
+/// accessing the system clipboard on Windows can cause deadlocks if multiple threads or processes attempt to access it simultaneously.
+/// Typical usage of the [`Clipboard`] resource should not encounter this issue: Bevy's copy of the [`Clipboard`] resource is unique,
+/// and both reading from and writing to it requires exclusive access, enforced by Rust's borrowing rules.
+///
+/// However, care should be taken to avoid cloning the [`Clipboard`] resource, duplicating it between worlds, reading from it in parallel,
+/// or otherwise sharing it across threads, as this could lead to multiple instances attempting to access the clipboard simultaneously and causing a deadlock.
+

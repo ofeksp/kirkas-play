@@ -1,0 +1,11 @@
+Upstream file: stackfuture-0.3.1/src/lib.rs
+
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
+
+Upstream file: stackfuture-0.3.1/src/tests.rs
+
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+

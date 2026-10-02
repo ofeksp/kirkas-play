@@ -1,0 +1,14 @@
+Upstream file: read-fonts-0.41.0/generated/generated_dsig.rs
+
+    /// Permission flags
+
+
+Upstream file: read-fonts-0.41.0/generated/generated_dsig.rs
+
+/// [Permission flags](https://learn.microsoft.com/en-us/typography/opentype/spec/dsig#table-structure)
+
+
+Upstream file: read-fonts-0.41.0/src/ps/cff/v1.rs
+
+        // Copyright
+

@@ -1,0 +1,13 @@
+Upstream file: icu_normalizer_data-2.3.0/build.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_normalizer_data-2.3.0/src/lib.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+

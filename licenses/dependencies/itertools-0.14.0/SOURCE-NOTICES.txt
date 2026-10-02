@@ -1,0 +1,17 @@
+Upstream file: itertools-0.14.0/src/adaptors/mod.rs
+
+//! Licensed under the Apache License, Version 2.0
+//! <https://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+//! <https://opensource.org/licenses/MIT>, at your
+//! option. This file may not be copied, modified, or distributed
+//! except according to those terms.
+
+
+Upstream file: itertools-0.14.0/tests/test_core.rs
+
+//! Licensed under the Apache License, Version 2.0
+//! https://www.apache.org/licenses/LICENSE-2.0 or the MIT license
+//! https://opensource.org/licenses/MIT, at your
+//! option. This file may not be copied, modified, or distributed
+//! except according to those terms.
+

@@ -1,0 +1,674 @@
+Upstream file: memmap2-0.9.11/src/advice.rs
+
+    /// **MADV_POPULATE_READ** - Linux only (since Linux 5.14)
+    ///
+    /// Populate  (prefault)  page  tables readable, faulting in all
+    /// pages in the range just as  if  manually  reading  from  each
+    /// page; however, avoid the actual memory access that would have
+    /// been performed after handling the fault.
+    ///
+    /// In contrast to MAP_POPULATE, MADV_POPULATE_READ does not hide
+    /// errors,  can  be  applied to (parts of) existing mappings and
+    /// will always populate (prefault) page  tables  readable.   One
+    /// example  use  case is prefaulting a file mapping, reading all
+    /// file content from disk; however, pages won't be  dirtied  and
+    /// consequently  won't  have  to  be  written  back to disk when
+    /// evicting the pages from memory.
+    ///
+    /// Depending on the underlying mapping, map the shared zeropage,
+    /// preallocate  memory  or  read the underlying file; files with
+    /// holes might or might not preallocate blocks.   If  populating
+    /// fails, a SIGBUS signal is not generated; instead, an error is
+    /// returned.
+    ///
+    /// If MADV_POPULATE_READ succeeds, all  page  tables  have  been
+    /// populated  (prefaulted) readable once.  If MADV_POPULATE_READ
+    /// fails, some page tables might have been populated.
+    ///
+    /// MADV_POPULATE_READ cannot be applied to mappings without read
+    /// permissions  and  special  mappings,  for  example,  mappings
+    /// marked with kernel-internal flags such as VM_PFNMAP or VM_IO,
+    /// or secret memory regions created using memfd_secret(2).
+    ///
+    /// Note  that with MADV_POPULATE_READ, the process can be killed
+    /// at any moment when the system runs out of memory.
+
+
+Upstream file: memmap2-0.9.11/src/advice.rs
+
+    /// **MADV_POPULATE_WRITE** - Linux only (since Linux 5.14)
+    ///
+    /// Populate (prefault) page tables  writable,  faulting  in  all
+    /// pages  in  the range just as if manually writing to each each
+    /// page; however, avoid the actual memory access that would have
+    /// been performed after handling the fault.
+    ///
+    /// In  contrast  to  MAP_POPULATE,  MADV_POPULATE_WRITE does not
+    /// hide errors, can be applied to (parts of)  existing  mappings
+    /// and  will  always  populate  (prefault) page tables writable.
+    /// One example use case is preallocating  memory,  breaking  any
+    /// CoW (Copy on Write).
+    ///
+    /// Depending  on  the  underlying mapping, preallocate memory or
+    /// read the underlying file; files with holes  will  preallocate
+    /// blocks.   If  populating fails, a SIGBUS signal is not gener‐
+    /// ated; instead, an error is returned.
+    ///
+    /// If MADV_POPULATE_WRITE succeeds, all page  tables  have  been
+    /// populated (prefaulted) writable once.  If MADV_POPULATE_WRITE
+    /// fails, some page tables might have been populated.
+    ///
+    /// MADV_POPULATE_WRITE cannot be  applied  to  mappings  without
+    /// write permissions and special mappings, for example, mappings
+    /// marked with kernel-internal flags such as VM_PFNMAP or VM_IO,
+    /// or secret memory regions created using memfd_secret(2).
+    ///
+    /// Note that with MADV_POPULATE_WRITE, the process can be killed
+    /// at any moment when the system runs out of memory.
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+/* file opened with write permissions */
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+//! A cross-platform Rust API for memory mapped buffers.
+//!
+//! The core functionality is provided by either [`Mmap`] or [`MmapMut`],
+//! which correspond to mapping a [`File`] to a [`&[u8]`](https://doc.rust-lang.org/std/primitive.slice.html)
+//! or [`&mut [u8]`](https://doc.rust-lang.org/std/primitive.slice.html)
+//! respectively. Both function by dereferencing to a slice, allowing the
+//! [`Mmap`]/[`MmapMut`] to be used in the same way you would the equivalent slice
+//! types.
+//!
+//! [`File`]: std::fs::File
+//!
+//! # Examples
+//!
+//! For simple cases [`Mmap`] can be used directly:
+//!
+//! ```
+//! use std::fs::File;
+//! use std::io::Read;
+//!
+//! use memmap2::Mmap;
+//!
+//! # fn main() -> std::io::Result<()> {
+//! let mut file = File::open("LICENSE-APACHE")?;
+//!
+//! let mut contents = Vec::new();
+//! file.read_to_end(&mut contents)?;
+//!
+//! let mmap = unsafe { Mmap::map(&file)?  };
+//!
+//! assert_eq!(&contents[..], &mmap[..]);
+//! # Ok(())
+//! # }
+//! ```
+//!
+//! However for cases which require configuration of the mapping, then
+//! you can use [`MmapOptions`] in order to further configure a mapping
+//! before you create it.
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+/// A memory map builder, providing advanced options and flags for specifying memory map behavior.
+///
+/// `MmapOptions` can be used to create an anonymous memory map using [`map_anon()`], or a
+/// file-backed memory map using one of [`map()`], [`map_mut()`], [`map_exec()`],
+/// [`map_copy()`], or [`map_copy_read_only()`].
+///
+/// ## Safety
+///
+/// All file-backed memory map constructors are marked `unsafe` because of the potential for
+/// *Undefined Behavior* (UB) using the map if the underlying file is subsequently modified, in or
+/// out of process. Applications must consider the risk and take appropriate precautions when
+/// using file-backed maps. Solutions such as file permissions, locks or process-private (e.g.
+/// unlinked) files exist but are platform specific and limited.
+///
+/// [`map_anon()`]: MmapOptions::map_anon()
+/// [`map()`]: MmapOptions::map()
+/// [`map_mut()`]: MmapOptions::map_mut()
+/// [`map_exec()`]: MmapOptions::map_exec()
+/// [`map_copy()`]: MmapOptions::map_copy()
+/// [`map_copy_read_only()`]: MmapOptions::map_copy_read_only()
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Configures the memory map to start at byte `offset` from the beginning of the file.
+    ///
+    /// This option has no effect on anonymous memory maps.
+    ///
+    /// By default, the offset is 0.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::MmapOptions;
+    /// use std::fs::File;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let mmap = unsafe {
+    ///     MmapOptions::new()
+    ///                 .offset(30)
+    ///                 .map(&File::open("LICENSE-APACHE")?)?
+    /// };
+    /// assert_eq!(&b"Apache License"[..],
+    ///            &mmap[..14]);
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Populate (prefault) page tables for a mapping.
+    ///
+    /// For a file mapping, this causes read-ahead on the file. This will help to reduce blocking on page faults later.
+    ///
+    /// This option corresponds to the `MAP_POPULATE` flag on Linux. It has no effect on Windows.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::MmapOptions;
+    /// use std::fs::File;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let file = File::open("LICENSE-MIT")?;
+    ///
+    /// let mmap = unsafe {
+    ///     MmapOptions::new().populate().map(&file)?
+    /// };
+    ///
+    /// assert_eq!(&b"Copyright"[..], &mmap[..9]);
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Do not reserve swap space for the memory map.
+    ///
+    /// By default, platforms may reserve swap space for memory maps.
+    /// This guarantees that a write to the mapped memory will succeed, even if physical memory is exhausted.
+    /// Otherwise, the write to memory could fail (on Linux with a segfault).
+    ///
+    /// This option requests that no swap space will be allocated for the memory map,
+    /// which can be useful for extremely large maps that are only written to sparsely.
+    ///
+    /// This option is currently supported on Linux, Android, Apple platforms (macOS, iOS, visionOS, etc.), NetBSD, Solaris and Illumos.
+    /// On those platforms, this option corresponds to the `MAP_NORESERVE` flag.
+    /// On Linux, this option is ignored if [`vm.overcommit_memory`](https://www.kernel.org/doc/Documentation/vm/overcommit-accounting) is set to 2.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::MmapOptions;
+    /// use std::fs::File;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let file = File::open("LICENSE-MIT")?;
+    ///
+    /// let mmap = unsafe {
+    ///     MmapOptions::new().no_reserve_swap().map_copy(&file)?
+    /// };
+    ///
+    /// assert_eq!(&b"Copyright"[..], &mmap[..9]);
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a read-only memory map backed by a file.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][MmapOptions] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::MmapOptions;
+    /// use std::fs::File;
+    /// use std::io::Read;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let mut file = File::open("LICENSE-APACHE")?;
+    ///
+    /// let mut contents = Vec::new();
+    /// file.read_to_end(&mut contents)?;
+    ///
+    /// let mmap = unsafe {
+    ///     MmapOptions::new().map(&file)?
+    /// };
+    ///
+    /// assert_eq!(&contents[..], &mmap[..]);
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a readable and executable memory map backed by a file.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][MmapOptions] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a writeable memory map backed by a file.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][MmapOptions] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read and write permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use std::fs::OpenOptions;
+    /// use std::path::PathBuf;
+    ///
+    /// use memmap2::MmapOptions;
+    /// #
+    /// # fn main() -> std::io::Result<()> {
+    /// # let tempdir = tempfile::tempdir()?;
+    /// let path: PathBuf = /* path to file */
+    /// #   tempdir.path().join("map_mut");
+    /// let file = OpenOptions::new().read(true).write(true).create(true).truncate(true).open(&path)?;
+    /// file.set_len(13)?;
+    ///
+    /// let mut mmap = unsafe {
+    ///     MmapOptions::new().map_mut(&file)?
+    /// };
+    ///
+    /// mmap.copy_from_slice(b"Hello, world!");
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a copy-on-write memory map backed by a file.
+    ///
+    /// Data written to the memory map will not be visible by other processes,
+    /// and will not be carried through to the underlying file.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][MmapOptions] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with writable permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::MmapOptions;
+    /// use std::fs::File;
+    /// use std::io::Write;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let file = File::open("LICENSE-APACHE")?;
+    /// let mut mmap = unsafe { MmapOptions::new().map_copy(&file)? };
+    /// (&mut mmap[..]).write_all(b"Hello, world!")?;
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a copy-on-write read-only memory map backed by a file.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][MmapOptions] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::MmapOptions;
+    /// use std::fs::File;
+    /// use std::io::Read;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let mut file = File::open("README.md")?;
+    ///
+    /// let mut contents = Vec::new();
+    /// file.read_to_end(&mut contents)?;
+    ///
+    /// let mmap = unsafe {
+    ///     MmapOptions::new().map_copy_read_only(&file)?
+    /// };
+    ///
+    /// assert_eq!(&contents[..], &mmap[..]);
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a raw memory map.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read and write permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+/// A handle to an immutable memory mapped buffer.
+///
+/// A `Mmap` may be backed by a file, or it can be anonymous map, backed by volatile memory. Use
+/// [`MmapOptions`] or [`map()`] to create a file-backed memory map. To create an immutable
+/// anonymous memory map, first create a mutable anonymous memory map, and then make it immutable
+/// with [`MmapMut::make_read_only()`].
+///
+/// A file backed `Mmap` is created by `&File` reference, and will remain valid even after the
+/// `File` is dropped. In other words, the `Mmap` handle is completely independent of the `File`
+/// used to create it. For consistency, on some platforms this is achieved by duplicating the
+/// underlying file handle. The memory will be unmapped when the `Mmap` handle is dropped.
+///
+/// Dereferencing and accessing the bytes of the buffer may result in page faults (e.g. swapping
+/// the mapped pages into physical memory) though the details of this are platform specific.
+///
+/// `Mmap` is [`Sync`] and [`Send`].
+///
+/// See [`MmapMut`] for the mutable version.
+///
+/// ## Safety
+///
+/// All file-backed memory map constructors are marked `unsafe` because of the potential for
+/// *Undefined Behavior* (UB) using the map if the underlying file is subsequently modified, in or
+/// out of process. Applications must consider the risk and take appropriate precautions when using
+/// file-backed maps. Solutions such as file permissions, locks or process-private (e.g. unlinked)
+/// files exist but are platform specific and limited.
+///
+/// ## Example
+///
+/// ```
+/// use memmap2::MmapOptions;
+/// use std::io::Write;
+/// use std::fs::File;
+///
+/// # fn main() -> std::io::Result<()> {
+/// let file = File::open("README.md")?;
+/// let mmap = unsafe { MmapOptions::new().map(&file)? };
+/// assert_eq!(b"# memmap2", &mmap[0..9]);
+/// # Ok(())
+/// # }
+/// ```
+///
+/// [`map()`]: Mmap::map()
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a read-only memory map backed by a file.
+    ///
+    /// This is equivalent to calling `MmapOptions::new().map(file)`.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][Mmap] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use std::fs::File;
+    /// use std::io::Read;
+    ///
+    /// use memmap2::Mmap;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let mut file = File::open("LICENSE-APACHE")?;
+    ///
+    /// let mut contents = Vec::new();
+    /// file.read_to_end(&mut contents)?;
+    ///
+    /// let mmap = unsafe { Mmap::map(&file)?  };
+    ///
+    /// assert_eq!(&contents[..], &mmap[..]);
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Transition the memory map to be writable.
+    ///
+    /// If the memory map is file-backed, the file must have been opened with write permissions.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with writable permissions.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use memmap2::Mmap;
+    /// use std::ops::DerefMut;
+    /// use std::io::Write;
+    /// # use std::fs::OpenOptions;
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// # let tempdir = tempfile::tempdir()?;
+    /// let file = /* file opened with write permissions */
+    /// #          OpenOptions::new()
+    /// #                      .read(true)
+    /// #                      .write(true)
+    /// #                      .create(true)
+    /// #                      .truncate(true)
+    /// #                      .open(tempdir.path()
+    /// #                      .join("make_mut"))?;
+    /// # file.set_len(128)?;
+    /// let mmap = unsafe { Mmap::map(&file)? };
+    /// // ... use the read-only memory map ...
+    /// let mut mut_mmap = mmap.make_mut()?;
+    /// mut_mmap.deref_mut().write_all(b"hello, world!")?;
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a writeable memory map backed by a file.
+    ///
+    /// This is equivalent to calling `MmapOptions::new().map_raw(file)`.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read and write permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+/// A handle to a mutable memory mapped buffer.
+///
+/// A file-backed `MmapMut` buffer may be used to read from or write to a file. An anonymous
+/// `MmapMut` buffer may be used any place that an in-memory byte buffer is needed. Use
+/// [`MmapMut::map_mut()`] and [`MmapMut::map_anon()`] to create a mutable memory map of the
+/// respective types, or [`MmapOptions::map_mut()`] and [`MmapOptions::map_anon()`] if non-default
+/// options are required.
+///
+/// A file backed `MmapMut` is created by `&File` reference, and will remain valid even after the
+/// `File` is dropped. In other words, the `MmapMut` handle is completely independent of the `File`
+/// used to create it. For consistency, on some platforms this is achieved by duplicating the
+/// underlying file handle. The memory will be unmapped when the `MmapMut` handle is dropped.
+///
+/// Dereferencing and accessing the bytes of the buffer may result in page faults (e.g. swapping
+/// the mapped pages into physical memory) though the details of this are platform specific.
+///
+/// `MmapMut` is [`Sync`] and [`Send`].
+///
+/// See [`Mmap`] for the immutable version.
+///
+/// ## Safety
+///
+/// All file-backed memory map constructors are marked `unsafe` because of the potential for
+/// *Undefined Behavior* (UB) using the map if the underlying file is subsequently modified, in or
+/// out of process. Applications must consider the risk and take appropriate precautions when using
+/// file-backed maps. Solutions such as file permissions, locks or process-private (e.g. unlinked)
+/// files exist but are platform specific and limited.
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Creates a writeable memory map backed by a file.
+    ///
+    /// This is equivalent to calling `MmapOptions::new().map_mut(file)`.
+    ///
+    /// # Safety
+    ///
+    /// See the [type-level][MmapMut] docs for why this function is unsafe.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file is not open with read and write permissions.
+    ///
+    /// Returns [`ErrorKind::Unsupported`] on unsupported platforms.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use std::fs::OpenOptions;
+    /// use std::path::PathBuf;
+    ///
+    /// use memmap2::MmapMut;
+    /// #
+    /// # fn main() -> std::io::Result<()> {
+    /// # let tempdir = tempfile::tempdir()?;
+    /// let path: PathBuf = /* path to file */
+    /// #   tempdir.path().join("map_mut");
+    /// let file = OpenOptions::new()
+    ///                        .read(true)
+    ///                        .write(true)
+    ///                        .create(true)
+    ///                        .truncate(true)
+    ///                        .open(&path)?;
+    /// file.set_len(13)?;
+    ///
+    /// let mut mmap = unsafe { MmapMut::map_mut(&file)? };
+    ///
+    /// mmap.copy_from_slice(b"Hello, world!");
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Returns an immutable version of this memory mapped buffer.
+    ///
+    /// If the memory map is file-backed, the file must have been opened with read permissions.
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file has not been opened with read permissions.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// use std::io::Write;
+    /// use std::path::PathBuf;
+    ///
+    /// use memmap2::{Mmap, MmapMut};
+    ///
+    /// # fn main() -> std::io::Result<()> {
+    /// let mut mmap = MmapMut::map_anon(128)?;
+    ///
+    /// (&mut mmap[..]).write(b"Hello, world!")?;
+    ///
+    /// let mmap: Mmap = mmap.make_read_only()?;
+    /// # Ok(())
+    /// # }
+    /// ```
+
+
+Upstream file: memmap2-0.9.11/src/lib.rs
+
+    /// Transition the memory map to be readable and executable.
+    ///
+    /// If the memory map is file-backed, the file must have been opened with execute permissions.
+    ///
+    /// On systems with separate instructions and data caches (a category that includes many ARM
+    /// chips), a platform-specific call may be needed to ensure that the changes are visible to the
+    /// execution unit (e.g. when using this function to implement a JIT compiler).  For more
+    /// details, see [this ARM write-up](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/caches-and-self-modifying-code)
+    /// or the `man` page for [`sys_icache_invalidate`](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/sys_icache_invalidate.3.html).
+    ///
+    /// # Errors
+    ///
+    /// This method returns an error when the underlying system call fails, which can happen for a
+    /// variety of reasons, such as when the file has not been opened with execute permissions.
+
+
+Upstream file: memmap2-0.9.11/src/windows.rs
+
+            // Create a mapping and view with maximum access permissions, then use `VirtualProtect`
+            // to set the actual `Protection`. This way, we can set more permissive protection later
+            // on.
+            // Also see https://msdn.microsoft.com/en-us/library/windows/desktop/aa366537.aspx
+

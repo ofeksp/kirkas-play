@@ -1,0 +1,17 @@
+Upstream file: linebender_resource_handle-0.1.1/src/blob.rs
+
+// Copyright 2022 the Raw Resource Handle Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: linebender_resource_handle-0.1.1/src/font.rs
+
+// Copyright 2022 the Raw Resource Handle Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: linebender_resource_handle-0.1.1/src/lib.rs
+
+// Copyright 2024 the Raw Resource Handle Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+

@@ -1,0 +1,109 @@
+Upstream file: ogg-0.8.0/examples/crc32-table-generate.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: ogg-0.8.0/examples/dump-all.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2018 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: ogg-0.8.0/examples/format-info.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: ogg-0.8.0/examples/repack.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2018 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: ogg-0.8.0/src/crc.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016-2017 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Redistribution or use only under the terms
+// specified in the LICENSE file attached to this
+// source distribution.
+
+
+Upstream file: ogg-0.8.0/src/lib.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Redistribution or use only under the terms
+// specified in the LICENSE file attached to this
+// source distribution.
+
+
+Upstream file: ogg-0.8.0/src/reading.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016-2017 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Redistribution or use only under the terms
+// specified in the LICENSE file attached to this
+// source distribution.
+
+
+Upstream file: ogg-0.8.0/src/test.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016-2017 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Redistribution or use only under the terms
+// specified in the LICENSE file attached to this
+// source distribution.
+
+
+Upstream file: ogg-0.8.0/src/writing.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016-2017 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Redistribution or use only under the terms
+// specified in the LICENSE file attached to this
+// source distribution.
+
+
+Upstream file: ogg-0.8.0/tests/async_read.rs
+
+// Ogg decoder and encoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Redistribution or use only under the terms
+// specified in the LICENSE file attached to this
+// source distribution.
+

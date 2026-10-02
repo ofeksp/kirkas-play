@@ -1,0 +1,131 @@
+Upstream file: fontique-0.9.0/examples/generic_families.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/attributes.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/backend/android.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/backend/coretext.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/backend/dwrite.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/backend/fontconfig.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/backend/mod.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/charmap.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/collection/mod.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/collection/query.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/fallback.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/family.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/family_name.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/font.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/generic.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/impl_fontconfig.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/lib.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/matching.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/scan.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/script.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/source.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: fontique-0.9.0/src/source_cache.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+

@@ -1,0 +1,127 @@
+Upstream file: lewton-0.10.2/examples/perf.rs
+
+// Vorbis decoder written in Rust
+//
+// This example file is licensed
+// under the CC-0 license:
+// https://creativecommons.org/publicdomain/zero/1.0/
+
+
+Upstream file: lewton-0.10.2/examples/player.rs
+
+// Vorbis decoder written in Rust
+//
+// This example file is licensed
+// under the CC-0 license:
+// https://creativecommons.org/publicdomain/zero/1.0/
+
+
+Upstream file: lewton-0.10.2/src/audio.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/bitpacking.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/header.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/header_cached.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/huffman_tree.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/imdct.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/imdct_test.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/inside_ogg.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/lib.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2016 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+
+
+Upstream file: lewton-0.10.2/src/samples.rs
+
+// Vorbis decoder written in Rust
+//
+// Copyright (c) 2019 est31 <MTest31@outlook.com>
+// and contributors. All rights reserved.
+// Licensed under MIT license, or Apache 2 license,
+// at your option. Please see the LICENSE file
+// attached to this source distribution for details.
+

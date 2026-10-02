@@ -1,0 +1,63 @@
+Upstream file: event-listener-strategy-0.5.4/src/lib.rs
+
+// SPDX-Licenser-Identifier: MIT OR Apache-2.0
+//! A strategy for using the [`event-listener`] crate in both blocking and non-blocking contexts.
+//!
+//! One of the stand-out features of the [`event-listener`] crate is the ability to use it in both
+//! asynchronous and synchronous contexts. However, sometimes using it like this causes a lot of
+//! boilerplate to be duplicated. This crate aims to reduce that boilerplate by providing an
+//! [`EventListenerFuture`] trait that implements both blocking and non-blocking functionality.
+//!
+//! # Examples
+//!
+//! ```
+//! use event_listener_strategy::{
+//!    event_listener::{Event, EventListener},
+//!    EventListenerFuture, FutureWrapper, Strategy
+//! };
+//!
+//! use std::pin::Pin;
+//! use std::task::Poll;
+//! use std::thread;
+//! use std::sync::Arc;
+//!
+//! // A future that waits three seconds for an event to be fired.
+//! fn wait_three_seconds() -> WaitThreeSeconds {
+//!     let event = Event::new();
+//!     let listener = event.listen();
+//!
+//!     thread::spawn(move || {
+//!         thread::sleep(std::time::Duration::from_secs(3));
+//!         event.notify(1);
+//!     });
+//!
+//!     WaitThreeSeconds { listener: Some(listener) }
+//! }
+//!
+//! struct WaitThreeSeconds {
+//!     listener: Option<EventListener>,
+//! }
+//!
+//! impl EventListenerFuture for WaitThreeSeconds {
+//!     type Output = ();
+//!
+//!     fn poll_with_strategy<'a, S: Strategy<'a>>(
+//!         mut self: Pin<&mut Self>,
+//!         strategy: &mut S,
+//!         context: &mut S::Context,
+//!     ) -> Poll<Self::Output> {
+//!         strategy.poll(&mut self.listener, context)
+//!     }
+//! }
+//!
+//! // Use the future in a blocking context.
+//! let future = wait_three_seconds();
+//! future.wait();
+//!
+//! // Use the future in a non-blocking context.
+//! futures_lite::future::block_on(async {
+//!     let future = FutureWrapper::new(wait_three_seconds());
+//!     future.await;
+//! });
+//! ```
+

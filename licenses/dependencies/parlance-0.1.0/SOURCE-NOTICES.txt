@@ -1,0 +1,59 @@
+Upstream file: parlance-0.1.0/src/bidi.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/font.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/font_family.rs
+
+// Copyright 2026 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/generic_family.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/impl_bytemuck.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/language.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/lib.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/script.rs
+
+// Copyright 2026 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/tag.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parlance-0.1.0/src/text.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+

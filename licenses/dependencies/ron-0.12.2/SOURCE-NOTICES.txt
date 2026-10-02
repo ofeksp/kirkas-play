@@ -1,0 +1,12 @@
+Upstream file: ron-0.12.2/src/parse.rs
+
+        // Adapted from MIT licensed Jenin Sutradhar's base 64 decoder
+        // https://github.com/JeninSutradhar/base64-Rust-Encoder-Decoder/blob/ee1fb08cbb78024ec8cf5e786815acb239169f02/src/lib.rs#L84-L128
+
+
+Upstream file: ron-0.12.2/src/value/raw.rs
+
+// Inspired by David Tolnay's serde-rs
+// https://github.com/serde-rs/json/blob/master/src/raw.rs
+// Licensed under either of Apache License, Version 2.0 or MIT license at your option.
+

@@ -1,0 +1,1083 @@
+Kirkas browser playtest — third-party license notices
+
+This distribution includes the following locked Wasm dependency graph, including build-time tools.
+License declarations identify the upstream terms; they do not assign a license to Kirkas.
+Original game artwork and composition are distributed with the owner's authorization.
+This software is based in part on the work of the Independent JPEG Group.
+Embedded fonts: Rye, Fraunces and Bevy's Fira Mono fallback; see their SIL Open Font License texts.
+Music: The Lantern Procession, composed for Kalito in 2026, rendered with GeneralUser GS
+by S. Christian Collins using TinySoundFont. See the supplied credits and soundfont license.
+
+accesskit 0.24.1 — MIT OR Apache-2.0
+  dependencies/accesskit-0.24.1/LICENSE-APACHE
+  dependencies/accesskit-0.24.1/LICENSE-MIT
+  dependencies/accesskit-0.24.1/LICENSE.chromium
+  dependencies/accesskit-0.24.1/SOURCE-NOTICES.txt
+accesskit_winit 0.32.2 — Apache-2.0
+  dependencies/accesskit_winit-0.32.2/LICENSE-APACHE
+  dependencies/accesskit_winit-0.32.2/LICENSE-MIT
+  dependencies/accesskit_winit-0.32.2/LICENSE.chromium
+  dependencies/accesskit_winit-0.32.2/SOURCE-NOTICES.txt
+adler2 2.0.1 — 0BSD OR MIT OR Apache-2.0
+  dependencies/adler2-2.0.1/LICENSE-0BSD
+  dependencies/adler2-2.0.1/LICENSE-APACHE
+  dependencies/adler2-2.0.1/LICENSE-MIT
+  dependencies/adler2-2.0.1/SOURCE-NOTICES.txt
+aho-corasick 1.1.5 — Unlicense OR MIT
+  dependencies/aho-corasick-1.1.5/COPYING
+  dependencies/aho-corasick-1.1.5/LICENSE-MIT
+allocator-api2 0.2.21 — MIT OR Apache-2.0
+  dependencies/allocator-api2-0.2.21/LICENSE-APACHE
+  dependencies/allocator-api2-0.2.21/LICENSE-MIT
+approx 0.5.1 — Apache-2.0
+  dependencies/approx-0.5.1/LICENSE
+  dependencies/approx-0.5.1/SOURCE-NOTICES.txt
+arrayvec 0.7.8 — MIT OR Apache-2.0
+  dependencies/arrayvec-0.7.8/LICENSE-APACHE
+  dependencies/arrayvec-0.7.8/LICENSE-MIT
+  dependencies/arrayvec-0.7.8/SOURCE-NOTICES.txt
+assert_type_match 0.1.1 — MIT OR Apache-2.0
+  dependencies/assert_type_match-0.1.1/LICENSE-APACHE
+  dependencies/assert_type_match-0.1.1/LICENSE-MIT
+async-broadcast 0.7.2 — MIT OR Apache-2.0
+  dependencies/async-broadcast-0.7.2/LICENSE-APACHE
+  dependencies/async-broadcast-0.7.2/LICENSE-MIT
+async-channel 2.5.0 — Apache-2.0 OR MIT
+  dependencies/async-channel-2.5.0/LICENSE-APACHE
+  dependencies/async-channel-2.5.0/LICENSE-MIT
+async-executor 1.14.0 — Apache-2.0 OR MIT
+  dependencies/async-executor-1.14.0/LICENSE-APACHE
+  dependencies/async-executor-1.14.0/LICENSE-MIT
+async-fs 2.2.0 — Apache-2.0 OR MIT
+  dependencies/async-fs-2.2.0/LICENSE-APACHE
+  dependencies/async-fs-2.2.0/LICENSE-MIT
+  dependencies/async-fs-2.2.0/SOURCE-NOTICES.txt
+async-lock 3.4.2 — Apache-2.0 OR MIT
+  dependencies/async-lock-3.4.2/LICENSE-APACHE
+  dependencies/async-lock-3.4.2/LICENSE-MIT
+async-task 4.7.1 — Apache-2.0 OR MIT
+  dependencies/async-task-4.7.1/LICENSE-APACHE
+  dependencies/async-task-4.7.1/LICENSE-MIT
+atomic-waker 1.1.2 — Apache-2.0 OR MIT
+  dependencies/atomic-waker-1.1.2/LICENSE-APACHE
+  dependencies/atomic-waker-1.1.2/LICENSE-MIT
+  dependencies/atomic-waker-1.1.2/LICENSE-THIRD-PARTY
+atomicow 1.2.0 — MIT OR Apache-2.0
+  dependencies/atomicow-1.2.0/LICENSE-APACHE
+  dependencies/atomicow-1.2.0/LICENSE-MIT
+autocfg 1.5.1 — Apache-2.0 OR MIT
+  dependencies/autocfg-1.5.1/LICENSE-APACHE
+  dependencies/autocfg-1.5.1/LICENSE-MIT
+bevy 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy-0.19.1/LICENSE-APACHE
+  dependencies/bevy-0.19.1/LICENSE-MIT
+  dependencies/bevy-0.19.1/SOURCE-NOTICES.txt
+bevy_a11y 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_a11y-0.19.1/LICENSE-APACHE
+  dependencies/bevy_a11y-0.19.1/LICENSE-MIT
+bevy_animation 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_animation-0.19.1/LICENSE-APACHE
+  dependencies/bevy_animation-0.19.1/LICENSE-MIT
+bevy_animation_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_animation_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_animation_macros-0.19.1/LICENSE-MIT
+bevy_anti_alias 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_anti_alias-0.19.1/LICENSE-APACHE
+  dependencies/bevy_anti_alias-0.19.1/LICENSE-MIT
+bevy_app 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_app-0.19.1/LICENSE-APACHE
+  dependencies/bevy_app-0.19.1/LICENSE-MIT
+bevy_asset 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_asset-0.19.1/LICENSE-APACHE
+  dependencies/bevy_asset-0.19.1/LICENSE-MIT
+bevy_asset_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_asset_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_asset_macros-0.19.1/LICENSE-MIT
+bevy_audio 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_audio-0.19.1/LICENSE-APACHE
+  dependencies/bevy_audio-0.19.1/LICENSE-MIT
+bevy_camera 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_camera-0.19.1/LICENSE-APACHE
+  dependencies/bevy_camera-0.19.1/LICENSE-MIT
+bevy_clipboard 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_clipboard-0.19.1/LICENSE-APACHE
+  dependencies/bevy_clipboard-0.19.1/LICENSE-MIT
+  dependencies/bevy_clipboard-0.19.1/SOURCE-NOTICES.txt
+bevy_color 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_color-0.19.1/LICENSE-APACHE
+  dependencies/bevy_color-0.19.1/LICENSE-MIT
+  dependencies/bevy_color-0.19.1/SOURCE-NOTICES.txt
+bevy_core_pipeline 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_core_pipeline-0.19.1/LICENSE-APACHE
+  dependencies/bevy_core_pipeline-0.19.1/LICENSE-MIT
+bevy_derive 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_derive-0.19.1/LICENSE-APACHE
+  dependencies/bevy_derive-0.19.1/LICENSE-MIT
+bevy_dev_tools 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_dev_tools-0.19.1/LICENSE-APACHE
+  dependencies/bevy_dev_tools-0.19.1/LICENSE-MIT
+bevy_diagnostic 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_diagnostic-0.19.1/LICENSE-APACHE
+  dependencies/bevy_diagnostic-0.19.1/LICENSE-MIT
+bevy_ecs 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ecs-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ecs-0.19.1/LICENSE-MIT
+  dependencies/bevy_ecs-0.19.1/SOURCE-NOTICES.txt
+bevy_ecs_macro_logic 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ecs_macro_logic-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ecs_macro_logic-0.19.1/LICENSE-MIT
+bevy_ecs_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ecs_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ecs_macros-0.19.1/LICENSE-MIT
+bevy_encase_derive 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_encase_derive-0.19.1/LICENSE-APACHE
+  dependencies/bevy_encase_derive-0.19.1/LICENSE-MIT
+bevy_feathers 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_feathers-0.19.1/LICENSE-APACHE
+  dependencies/bevy_feathers-0.19.1/LICENSE-MIT
+bevy_gilrs 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_gilrs-0.19.1/LICENSE-APACHE
+  dependencies/bevy_gilrs-0.19.1/LICENSE-MIT
+bevy_gizmos 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_gizmos-0.19.1/LICENSE-APACHE
+  dependencies/bevy_gizmos-0.19.1/LICENSE-MIT
+bevy_gizmos_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_gizmos_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_gizmos_macros-0.19.1/LICENSE-MIT
+bevy_gizmos_render 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_gizmos_render-0.19.1/LICENSE-APACHE
+  dependencies/bevy_gizmos_render-0.19.1/LICENSE-MIT
+bevy_image 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_image-0.19.1/LICENSE-APACHE
+  dependencies/bevy_image-0.19.1/LICENSE-MIT
+bevy_input 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_input-0.19.1/LICENSE-APACHE
+  dependencies/bevy_input-0.19.1/LICENSE-MIT
+  dependencies/bevy_input-0.19.1/SOURCE-NOTICES.txt
+bevy_input_focus 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_input_focus-0.19.1/LICENSE-APACHE
+  dependencies/bevy_input_focus-0.19.1/LICENSE-MIT
+bevy_internal 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_internal-0.19.1/LICENSE-APACHE
+  dependencies/bevy_internal-0.19.1/LICENSE-MIT
+bevy_light 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_light-0.19.1/LICENSE-APACHE
+  dependencies/bevy_light-0.19.1/LICENSE-MIT
+bevy_log 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_log-0.19.1/LICENSE-APACHE
+  dependencies/bevy_log-0.19.1/LICENSE-MIT
+bevy_macro_utils 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_macro_utils-0.19.1/LICENSE-APACHE
+  dependencies/bevy_macro_utils-0.19.1/LICENSE-MIT
+bevy_material 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_material-0.19.1/LICENSE-APACHE
+  dependencies/bevy_material-0.19.1/LICENSE-MIT
+bevy_material_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_material_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_material_macros-0.19.1/LICENSE-MIT
+bevy_math 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_math-0.19.1/LICENSE-APACHE
+  dependencies/bevy_math-0.19.1/LICENSE-MIT
+bevy_mesh 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_mesh-0.19.1/LICENSE-APACHE
+  dependencies/bevy_mesh-0.19.1/LICENSE-MIT
+bevy_mikktspace 1.0.0 — Zlib AND (MIT OR Apache-2.0)
+  dependencies/bevy_mikktspace-1.0.0/LICENSE-APACHE
+  dependencies/bevy_mikktspace-1.0.0/LICENSE-MIT
+  dependencies/bevy_mikktspace-1.0.0/SOURCE-NOTICES.txt
+bevy_pbr 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_pbr-0.19.1/LICENSE-APACHE
+  dependencies/bevy_pbr-0.19.1/LICENSE-MIT
+bevy_picking 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_picking-0.19.1/LICENSE-APACHE
+  dependencies/bevy_picking-0.19.1/LICENSE-MIT
+bevy_platform 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_platform-0.19.1/LICENSE-APACHE
+  dependencies/bevy_platform-0.19.1/LICENSE-MIT
+bevy_post_process 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_post_process-0.19.1/LICENSE-APACHE
+  dependencies/bevy_post_process-0.19.1/LICENSE-MIT
+bevy_ptr 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ptr-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ptr-0.19.1/LICENSE-MIT
+bevy_reflect 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_reflect-0.19.1/LICENSE-APACHE
+  dependencies/bevy_reflect-0.19.1/LICENSE-MIT
+bevy_reflect_derive 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_reflect_derive-0.19.1/LICENSE-APACHE
+  dependencies/bevy_reflect_derive-0.19.1/LICENSE-MIT
+bevy_render 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_render-0.19.1/LICENSE-APACHE
+  dependencies/bevy_render-0.19.1/LICENSE-MIT
+bevy_render_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_render_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_render_macros-0.19.1/LICENSE-MIT
+bevy_scene 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_scene-0.19.1/LICENSE-APACHE
+  dependencies/bevy_scene-0.19.1/LICENSE-MIT
+bevy_scene_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_scene_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_scene_macros-0.19.1/LICENSE-MIT
+bevy_shader 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_shader-0.19.1/LICENSE-APACHE
+  dependencies/bevy_shader-0.19.1/LICENSE-MIT
+bevy_sprite 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_sprite-0.19.1/LICENSE-APACHE
+  dependencies/bevy_sprite-0.19.1/LICENSE-MIT
+bevy_sprite_render 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_sprite_render-0.19.1/LICENSE-APACHE
+  dependencies/bevy_sprite_render-0.19.1/LICENSE-MIT
+bevy_state 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_state-0.19.1/LICENSE-APACHE
+  dependencies/bevy_state-0.19.1/LICENSE-MIT
+bevy_state_macros 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_state_macros-0.19.1/LICENSE-APACHE
+  dependencies/bevy_state_macros-0.19.1/LICENSE-MIT
+bevy_tasks 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_tasks-0.19.1/LICENSE-APACHE
+  dependencies/bevy_tasks-0.19.1/LICENSE-MIT
+bevy_text 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_text-0.19.1/LICENSE-APACHE
+  dependencies/bevy_text-0.19.1/LICENSE-MIT
+  dependencies/bevy_text-0.19.1/assets/fonts/FiraMono-LICENSE
+bevy_time 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_time-0.19.1/LICENSE-APACHE
+  dependencies/bevy_time-0.19.1/LICENSE-MIT
+bevy_transform 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_transform-0.19.1/LICENSE-APACHE
+  dependencies/bevy_transform-0.19.1/LICENSE-MIT
+bevy_ui 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ui-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ui-0.19.1/LICENSE-MIT
+bevy_ui_render 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ui_render-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ui_render-0.19.1/LICENSE-MIT
+bevy_ui_widgets 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_ui_widgets-0.19.1/LICENSE-APACHE
+  dependencies/bevy_ui_widgets-0.19.1/LICENSE-MIT
+bevy_utils 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_utils-0.19.1/LICENSE-APACHE
+  dependencies/bevy_utils-0.19.1/LICENSE-MIT
+bevy_window 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_window-0.19.1/LICENSE-APACHE
+  dependencies/bevy_window-0.19.1/LICENSE-MIT
+  dependencies/bevy_window-0.19.1/SOURCE-NOTICES.txt
+bevy_winit 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_winit-0.19.1/LICENSE-APACHE
+  dependencies/bevy_winit-0.19.1/LICENSE-MIT
+bevy_world_serialization 0.19.1 — MIT OR Apache-2.0
+  dependencies/bevy_world_serialization-0.19.1/LICENSE-APACHE
+  dependencies/bevy_world_serialization-0.19.1/LICENSE-MIT
+bit-set 0.9.1 — Apache-2.0 OR MIT
+  dependencies/bit-set-0.9.1/LICENSE-APACHE
+  dependencies/bit-set-0.9.1/LICENSE-MIT
+  dependencies/bit-set-0.9.1/SOURCE-NOTICES.txt
+bit-vec 0.9.1 — Apache-2.0 OR MIT
+  dependencies/bit-vec-0.9.1/LICENSE-APACHE
+  dependencies/bit-vec-0.9.1/LICENSE-MIT
+  dependencies/bit-vec-0.9.1/SOURCE-NOTICES.txt
+bitflags 2.13.2 — MIT OR Apache-2.0
+  dependencies/bitflags-2.13.2/LICENSE-APACHE
+  dependencies/bitflags-2.13.2/LICENSE-MIT
+  dependencies/bitflags-2.13.2/SOURCE-NOTICES.txt
+blake3 1.8.7 — CC0-1.0 OR Apache-2.0 OR Apache-2.0 WITH LLVM-exception
+  dependencies/blake3-1.8.7/LICENSE_A2
+  dependencies/blake3-1.8.7/LICENSE_A2LLVM
+  dependencies/blake3-1.8.7/LICENSE_CC0
+blocking 1.7.0 — Apache-2.0 OR MIT
+  dependencies/blocking-1.7.0/LICENSE-APACHE
+  dependencies/blocking-1.7.0/LICENSE-MIT
+bumpalo 3.20.3 — MIT OR Apache-2.0
+  dependencies/bumpalo-3.20.3/LICENSE-APACHE
+  dependencies/bumpalo-3.20.3/LICENSE-MIT
+  dependencies/bumpalo-3.20.3/SOURCE-NOTICES.txt
+bytemuck 1.25.2 — Zlib OR Apache-2.0 OR MIT
+  dependencies/bytemuck-1.25.2/LICENSE-APACHE
+  dependencies/bytemuck-1.25.2/LICENSE-MIT
+  dependencies/bytemuck-1.25.2/LICENSE-ZLIB
+bytemuck_derive 1.12.1 — Zlib OR Apache-2.0 OR MIT
+  dependencies/bytemuck_derive-1.12.1/LICENSE-APACHE
+  dependencies/bytemuck_derive-1.12.1/LICENSE-MIT
+  dependencies/bytemuck_derive-1.12.1/LICENSE-ZLIB
+byteorder 1.5.0 — Unlicense OR MIT
+  dependencies/byteorder-1.5.0/COPYING
+  dependencies/byteorder-1.5.0/LICENSE-MIT
+byteorder-lite 0.1.0 — Unlicense OR MIT
+  dependencies/byteorder-lite-0.1.0/LICENSE-MIT
+cc 1.4.6 — MIT OR Apache-2.0
+  dependencies/cc-1.4.6/LICENSE-APACHE
+  dependencies/cc-1.4.6/LICENSE-MIT
+cfg-if 1.0.5 — MIT OR Apache-2.0
+  dependencies/cfg-if-1.0.5/LICENSE-APACHE
+  dependencies/cfg-if-1.0.5/LICENSE-MIT
+cfg_aliases 0.2.2 — MIT
+  dependencies/cfg_aliases-0.2.2/LICENSE
+codespan-reporting 0.12.0 — Apache-2.0
+  dependencies/codespan-reporting-0.12.0/LICENSE
+codespan-reporting 0.13.1 — Apache-2.0
+  dependencies/codespan-reporting-0.13.1/LICENSE
+concurrent-queue 2.5.0 — Apache-2.0 OR MIT
+  dependencies/concurrent-queue-2.5.0/LICENSE-APACHE
+  dependencies/concurrent-queue-2.5.0/LICENSE-MIT
+console_error_panic_hook 0.1.7 — Apache-2.0/MIT
+  dependencies/console_error_panic_hook-0.1.7/LICENSE-APACHE
+  dependencies/console_error_panic_hook-0.1.7/LICENSE-MIT
+const-fnv1a-hash 1.1.0 — MIT
+  dependencies/const-fnv1a-hash-1.1.0/LICENSE
+const_panic 0.2.17 — Zlib
+  dependencies/const_panic-0.2.17/LICENSE-ZLIB.md
+const_soft_float 0.1.4 — MIT OR Apache-2.0
+  dependencies/const_soft_float-0.1.4/LICENSE-APACHE
+  dependencies/const_soft_float-0.1.4/LICENSE-MIT
+  dependencies/const_soft_float-0.1.4/SOURCE-NOTICES.txt
+constant_time_eq 0.4.2 — CC0-1.0 OR MIT-0 OR Apache-2.0
+  dependencies/constant_time_eq-0.4.2/LICENSE-APACHE
+  dependencies/constant_time_eq-0.4.2/LICENSE-CC0
+  dependencies/constant_time_eq-0.4.2/LICENSE-MIT0
+constgebra 0.1.4 — MIT OR Apache-2.0
+  dependencies/constgebra-0.1.4/LICENSE-Apache-2.0.txt
+  dependencies/constgebra-0.1.4/UPSTREAM-DECLARATION.txt
+  The upstream crate declares MIT OR Apache-2.0 but ships no license text. The standard Apache-2.0 terms are included; no copyright holder is invented.
+convert_case 0.10.0 — MIT
+  dependencies/convert_case-0.10.0/LICENSE
+core_maths 0.1.1 — MIT
+  dependencies/core_maths-0.1.1/LICENSE
+cpal 0.17.3 — Apache-2.0
+  dependencies/cpal-0.17.3/LICENSE
+  dependencies/cpal-0.17.3/SOURCE-NOTICES.txt
+crc32fast 1.5.2 — MIT OR Apache-2.0
+  dependencies/crc32fast-1.5.2/LICENSE-APACHE
+  dependencies/crc32fast-1.5.2/LICENSE-MIT
+critical-section 1.2.0 — MIT OR Apache-2.0
+  dependencies/critical-section-1.2.0/LICENSE-APACHE
+  dependencies/critical-section-1.2.0/LICENSE-MIT
+crossbeam-channel 0.5.17 — MIT OR Apache-2.0
+  dependencies/crossbeam-channel-0.5.17/LICENSE-APACHE
+  dependencies/crossbeam-channel-0.5.17/LICENSE-MIT
+  dependencies/crossbeam-channel-0.5.17/LICENSE-THIRD-PARTY
+  dependencies/crossbeam-channel-0.5.17/SOURCE-NOTICES.txt
+crossbeam-queue 0.3.14 — MIT OR Apache-2.0
+  dependencies/crossbeam-queue-0.3.14/LICENSE-APACHE
+  dependencies/crossbeam-queue-0.3.14/LICENSE-MIT
+crossbeam-utils 0.8.23 — MIT OR Apache-2.0
+  dependencies/crossbeam-utils-0.8.23/LICENSE-APACHE
+  dependencies/crossbeam-utils-0.8.23/LICENSE-MIT
+cursor-icon 1.2.0 — MIT OR Apache-2.0 OR Zlib
+  dependencies/cursor-icon-1.2.0/LICENSE-APACHE
+  dependencies/cursor-icon-1.2.0/LICENSE-MIT
+  dependencies/cursor-icon-1.2.0/LICENSE-ZLIB
+  dependencies/cursor-icon-1.2.0/SOURCE-NOTICES.txt
+dasp_sample 0.11.0 — MIT OR Apache-2.0
+  dependencies/dasp_sample-0.11.0/LICENSE-APACHE
+  dependencies/dasp_sample-0.11.0/LICENSE-MIT
+data-encoding 2.11.1 — MIT
+  dependencies/data-encoding-2.11.1/LICENSE
+derive_more 2.1.1 — MIT
+  dependencies/derive_more-2.1.1/LICENSE
+  dependencies/derive_more-2.1.1/SOURCE-NOTICES.txt
+derive_more-impl 2.1.1 — MIT
+  dependencies/derive_more-impl-2.1.1/LICENSE
+displaydoc 0.2.7 — MIT OR Apache-2.0
+  dependencies/displaydoc-0.2.7/LICENSE-APACHE
+  dependencies/displaydoc-0.2.7/LICENSE-MIT
+disqualified 1.1.0 — MIT OR Apache-2.0
+  dependencies/disqualified-1.1.0/LICENSE-APACHE
+  dependencies/disqualified-1.1.0/LICENSE-MIT
+document-features 0.2.12 — MIT OR Apache-2.0
+  dependencies/document-features-0.2.12/LICENSE-APACHE
+  dependencies/document-features-0.2.12/LICENSE-MIT
+  dependencies/document-features-0.2.12/SOURCE-NOTICES.txt
+downcast-rs 2.0.2 — MIT OR Apache-2.0
+  dependencies/downcast-rs-2.0.2/LICENSE-APACHE
+  dependencies/downcast-rs-2.0.2/LICENSE-MIT
+dpi 0.1.2 — Apache-2.0 AND MIT
+  dependencies/dpi-0.1.2/LICENSE
+  dependencies/dpi-0.1.2/LICENSE-LIBM-MIT
+  dependencies/dpi-0.1.2/SOURCE-NOTICES.txt
+either 1.18.0 — MIT OR Apache-2.0
+  dependencies/either-1.18.0/LICENSE-APACHE
+  dependencies/either-1.18.0/LICENSE-MIT
+encase 0.12.1 — MIT-0
+  dependencies/encase-0.12.1/LICENSE
+encase_derive 0.12.1 — MIT-0
+  dependencies/encase_derive-0.12.1/LICENSE
+encase_derive_impl 0.12.1 — MIT-0
+  dependencies/encase_derive_impl-0.12.1/LICENSE
+equivalent 1.0.2 — Apache-2.0 OR MIT
+  dependencies/equivalent-1.0.2/LICENSE-APACHE
+  dependencies/equivalent-1.0.2/LICENSE-MIT
+erased-serde 0.4.10 — MIT OR Apache-2.0
+  dependencies/erased-serde-0.4.10/LICENSE-APACHE
+  dependencies/erased-serde-0.4.10/LICENSE-MIT
+euclid 0.22.14 — MIT OR Apache-2.0
+  dependencies/euclid-0.22.14/COPYRIGHT
+  dependencies/euclid-0.22.14/LICENSE-APACHE
+  dependencies/euclid-0.22.14/LICENSE-MIT
+  dependencies/euclid-0.22.14/SOURCE-NOTICES.txt
+event-listener 5.4.2 — Apache-2.0 OR MIT
+  dependencies/event-listener-5.4.2/LICENSE-APACHE
+  dependencies/event-listener-5.4.2/LICENSE-MIT
+event-listener-strategy 0.5.4 — Apache-2.0 OR MIT
+  dependencies/event-listener-strategy-0.5.4/LICENSE-APACHE
+  dependencies/event-listener-strategy-0.5.4/LICENSE-MIT
+  dependencies/event-listener-strategy-0.5.4/SOURCE-NOTICES.txt
+fastrand 2.5.0 — Apache-2.0 OR MIT
+  dependencies/fastrand-2.5.0/LICENSE-APACHE
+  dependencies/fastrand-2.5.0/LICENSE-MIT
+fdeflate 0.3.7 — MIT OR Apache-2.0
+  dependencies/fdeflate-0.3.7/LICENSE-APACHE
+  dependencies/fdeflate-0.3.7/LICENSE-MIT
+find-msvc-tools 0.1.12 — MIT OR Apache-2.0
+  dependencies/find-msvc-tools-0.1.12/LICENSE-APACHE
+  dependencies/find-msvc-tools-0.1.12/LICENSE-MIT
+  dependencies/find-msvc-tools-0.1.12/SOURCE-NOTICES.txt
+fixedbitset 0.5.7 — MIT OR Apache-2.0
+  dependencies/fixedbitset-0.5.7/LICENSE-APACHE
+  dependencies/fixedbitset-0.5.7/LICENSE-MIT
+flate2 1.1.10 — MIT OR Apache-2.0
+  dependencies/flate2-1.1.10/LICENSE-APACHE
+  dependencies/flate2-1.1.10/LICENSE-MIT
+  dependencies/flate2-1.1.10/SOURCE-NOTICES.txt
+fnv 1.0.7 — Apache-2.0 / MIT
+  dependencies/fnv-1.0.7/LICENSE-APACHE
+  dependencies/fnv-1.0.7/LICENSE-MIT
+foldhash 0.1.5 — Zlib
+  dependencies/foldhash-0.1.5/LICENSE
+foldhash 0.2.0 — Zlib
+  dependencies/foldhash-0.2.0/LICENSE
+font-types 0.11.3 — MIT OR Apache-2.0
+  dependencies/font-types-0.11.3/LICENSE-APACHE
+  dependencies/font-types-0.11.3/LICENSE-MIT
+  dependencies/font-types-0.11.3/SOURCE-NOTICES.txt
+font-types 0.12.5 — MIT OR Apache-2.0
+  dependencies/font-types-0.12.5/LICENSE-APACHE
+  dependencies/font-types-0.12.5/LICENSE-MIT
+  dependencies/font-types-0.12.5/SOURCE-NOTICES.txt
+fontique 0.9.0 — Apache-2.0 OR MIT
+  dependencies/fontique-0.9.0/LICENSE-APACHE
+  dependencies/fontique-0.9.0/LICENSE-MIT
+  dependencies/fontique-0.9.0/SOURCE-NOTICES.txt
+futures-channel 0.3.34 — MIT OR Apache-2.0
+  dependencies/futures-channel-0.3.34/LICENSE-APACHE
+  dependencies/futures-channel-0.3.34/LICENSE-MIT
+  dependencies/futures-channel-0.3.34/SOURCE-NOTICES.txt
+futures-core 0.3.34 — MIT OR Apache-2.0
+  dependencies/futures-core-0.3.34/LICENSE-APACHE
+  dependencies/futures-core-0.3.34/LICENSE-MIT
+futures-io 0.3.34 — MIT OR Apache-2.0
+  dependencies/futures-io-0.3.34/LICENSE-APACHE
+  dependencies/futures-io-0.3.34/LICENSE-MIT
+futures-lite 2.6.1 — Apache-2.0 OR MIT
+  dependencies/futures-lite-2.6.1/LICENSE-APACHE
+  dependencies/futures-lite-2.6.1/LICENSE-MIT
+  dependencies/futures-lite-2.6.1/LICENSE-THIRD-PARTY
+futures-macro 0.3.34 — MIT OR Apache-2.0
+  dependencies/futures-macro-0.3.34/LICENSE-APACHE
+  dependencies/futures-macro-0.3.34/LICENSE-MIT
+futures-task 0.3.34 — MIT OR Apache-2.0
+  dependencies/futures-task-0.3.34/LICENSE-APACHE
+  dependencies/futures-task-0.3.34/LICENSE-MIT
+futures-util 0.3.34 — MIT OR Apache-2.0
+  dependencies/futures-util-0.3.34/LICENSE-APACHE
+  dependencies/futures-util-0.3.34/LICENSE-MIT
+getrandom 0.3.4 — MIT OR Apache-2.0
+  dependencies/getrandom-0.3.4/LICENSE-APACHE
+  dependencies/getrandom-0.3.4/LICENSE-MIT
+getrandom 0.4.3 — MIT OR Apache-2.0
+  dependencies/getrandom-0.4.3/LICENSE-APACHE
+  dependencies/getrandom-0.4.3/LICENSE-MIT
+gilrs 0.11.2 — Apache-2.0/MIT
+  dependencies/gilrs-0.11.2/SDL_GameControllerDB/LICENSE
+  dependencies/gilrs-0.11.2/LICENSE-APACHE
+  dependencies/gilrs-0.11.2/LICENSE-MIT
+  dependencies/gilrs-0.11.2/SOURCE-NOTICES.txt
+gilrs-core 0.6.8 — Apache-2.0/MIT
+  dependencies/gilrs-core-0.6.8/LICENSE-APACHE
+  dependencies/gilrs-core-0.6.8/LICENSE-MIT
+  dependencies/gilrs-core-0.6.8/SOURCE-NOTICES.txt
+glam 0.32.1 — MIT OR Apache-2.0
+  dependencies/glam-0.32.1/LICENSE-APACHE
+  dependencies/glam-0.32.1/LICENSE-MIT
+glow 0.17.0 — MIT OR Apache-2.0 OR Zlib
+  dependencies/glow-0.17.0/LICENSE-APACHE
+  dependencies/glow-0.17.0/LICENSE-MIT
+  dependencies/glow-0.17.0/LICENSE-ZLIB
+grid 1.0.1 — MIT
+  dependencies/grid-1.0.1/LICENSE
+guillotiere 0.6.2 — MIT/Apache-2.0
+  dependencies/guillotiere-0.6.2/LICENSE
+half 2.7.1 — MIT OR Apache-2.0
+  dependencies/half-2.7.1/LICENSE-APACHE
+  dependencies/half-2.7.1/LICENSE-MIT
+harfrust 0.6.2 — MIT
+  dependencies/harfrust-0.6.2/LICENSE
+  dependencies/harfrust-0.6.2/SOURCE-NOTICES.txt
+hashbrown 0.15.5 — MIT OR Apache-2.0
+  dependencies/hashbrown-0.15.5/LICENSE-APACHE
+  dependencies/hashbrown-0.15.5/LICENSE-MIT
+hashbrown 0.16.1 — MIT OR Apache-2.0
+  dependencies/hashbrown-0.16.1/LICENSE-APACHE
+  dependencies/hashbrown-0.16.1/LICENSE-MIT
+hashbrown 0.17.1 — MIT OR Apache-2.0
+  dependencies/hashbrown-0.17.1/LICENSE-APACHE
+  dependencies/hashbrown-0.17.1/LICENSE-MIT
+hexasphere 18.0.0 — MIT OR Apache-2.0
+  dependencies/hexasphere-18.0.0/LICENSE-APACHE2
+  dependencies/hexasphere-18.0.0/LICENSE-MIT
+hexf-parse 0.2.1 — CC0-1.0
+  dependencies/hexf-parse-0.2.1/LICENSE-CC0-1.0.txt
+  dependencies/hexf-parse-0.2.1/UPSTREAM-DECLARATION.txt
+  The upstream crate declares CC0-1.0 but ships no license text. The standard CC0-1.0 terms are included; no copyright holder is invented.
+hound 3.5.1 — Apache-2.0
+  dependencies/hound-3.5.1/license
+  dependencies/hound-3.5.1/SOURCE-NOTICES.txt
+icu_collections 2.3.0 — Unicode-3.0
+  dependencies/icu_collections-2.3.0/LICENSE
+  dependencies/icu_collections-2.3.0/SOURCE-NOTICES.txt
+icu_locale_core 2.3.0 — Unicode-3.0
+  dependencies/icu_locale_core-2.3.0/LICENSE
+  dependencies/icu_locale_core-2.3.0/SOURCE-NOTICES.txt
+icu_locale_fallback 2.3.0 — Unicode-3.0
+  dependencies/icu_locale_fallback-2.3.0/LICENSE
+  dependencies/icu_locale_fallback-2.3.0/SOURCE-NOTICES.txt
+icu_locale_fallback_data 2.3.0 — Unicode-3.0
+  dependencies/icu_locale_fallback_data-2.3.0/LICENSE
+  dependencies/icu_locale_fallback_data-2.3.0/SOURCE-NOTICES.txt
+icu_normalizer 2.3.0 — Unicode-3.0
+  dependencies/icu_normalizer-2.3.0/LICENSE
+  dependencies/icu_normalizer-2.3.0/SOURCE-NOTICES.txt
+icu_normalizer_data 2.3.0 — Unicode-3.0
+  dependencies/icu_normalizer_data-2.3.0/LICENSE
+  dependencies/icu_normalizer_data-2.3.0/SOURCE-NOTICES.txt
+icu_properties 2.3.0 — Unicode-3.0
+  dependencies/icu_properties-2.3.0/LICENSE
+  dependencies/icu_properties-2.3.0/SOURCE-NOTICES.txt
+icu_properties_data 2.3.0 — Unicode-3.0
+  dependencies/icu_properties_data-2.3.0/LICENSE
+  dependencies/icu_properties_data-2.3.0/SOURCE-NOTICES.txt
+icu_provider 2.3.1 — Unicode-3.0
+  dependencies/icu_provider-2.3.1/LICENSE
+  dependencies/icu_provider-2.3.1/SOURCE-NOTICES.txt
+icu_segmenter 2.3.0 — Unicode-3.0
+  dependencies/icu_segmenter-2.3.0/LICENSE
+  dependencies/icu_segmenter-2.3.0/SOURCE-NOTICES.txt
+icu_segmenter_data 2.3.0 — Unicode-3.0
+  dependencies/icu_segmenter_data-2.3.0/LICENSE
+  dependencies/icu_segmenter_data-2.3.0/SOURCE-NOTICES.txt
+image 0.25.10 — MIT OR Apache-2.0
+  dependencies/image-0.25.10/LICENSE-APACHE
+  dependencies/image-0.25.10/LICENSE-MIT
+  dependencies/image-0.25.10/SOURCE-NOTICES.txt
+indexmap 2.14.2 — Apache-2.0 OR MIT
+  dependencies/indexmap-2.14.2/LICENSE-APACHE
+  dependencies/indexmap-2.14.2/LICENSE-MIT
+inventory 0.3.24 — MIT OR Apache-2.0
+  dependencies/inventory-0.3.24/LICENSE-APACHE
+  dependencies/inventory-0.3.24/LICENSE-MIT
+itertools 0.14.0 — MIT OR Apache-2.0
+  dependencies/itertools-0.14.0/LICENSE-APACHE
+  dependencies/itertools-0.14.0/LICENSE-MIT
+  dependencies/itertools-0.14.0/SOURCE-NOTICES.txt
+itoa 1.0.18 — MIT OR Apache-2.0
+  dependencies/itoa-1.0.18/LICENSE-APACHE
+  dependencies/itoa-1.0.18/LICENSE-MIT
+jobserver 0.1.35 — MIT OR Apache-2.0
+  dependencies/jobserver-0.1.35/LICENSE-APACHE
+  dependencies/jobserver-0.1.35/LICENSE-MIT
+js-sys 0.3.105 — MIT OR Apache-2.0
+  dependencies/js-sys-0.3.105/LICENSE-APACHE
+  dependencies/js-sys-0.3.105/LICENSE-MIT
+lazy_static 1.5.0 — MIT OR Apache-2.0
+  dependencies/lazy_static-1.5.0/LICENSE-APACHE
+  dependencies/lazy_static-1.5.0/LICENSE-MIT
+  dependencies/lazy_static-1.5.0/SOURCE-NOTICES.txt
+lewton 0.10.2 — MIT OR Apache-2.0
+  dependencies/lewton-0.10.2/LICENSE
+  dependencies/lewton-0.10.2/SOURCE-NOTICES.txt
+libm 0.2.16 — MIT
+  dependencies/libm-0.2.16/LICENSE.txt
+  dependencies/libm-0.2.16/SOURCE-NOTICES.txt
+linebender_resource_handle 0.1.1 — Apache-2.0 OR MIT
+  dependencies/linebender_resource_handle-0.1.1/LICENSE-APACHE
+  dependencies/linebender_resource_handle-0.1.1/LICENSE-MIT
+  dependencies/linebender_resource_handle-0.1.1/SOURCE-NOTICES.txt
+litemap 0.8.3 — Unicode-3.0
+  dependencies/litemap-0.8.3/LICENSE
+  dependencies/litemap-0.8.3/SOURCE-NOTICES.txt
+litrs 1.0.0 — MIT OR Apache-2.0
+  dependencies/litrs-1.0.0/LICENSE-APACHE
+  dependencies/litrs-1.0.0/LICENSE-MIT
+lock_api 0.4.14 — MIT OR Apache-2.0
+  dependencies/lock_api-0.4.14/LICENSE-APACHE
+  dependencies/lock_api-0.4.14/LICENSE-MIT
+  dependencies/lock_api-0.4.14/SOURCE-NOTICES.txt
+log 0.4.34 — MIT OR Apache-2.0
+  dependencies/log-0.4.34/LICENSE-APACHE
+  dependencies/log-0.4.34/LICENSE-MIT
+  dependencies/log-0.4.34/SOURCE-NOTICES.txt
+matchers 0.2.0 — MIT
+  dependencies/matchers-0.2.0/LICENSE
+memchr 2.8.3 — Unlicense OR MIT
+  dependencies/memchr-2.8.3/COPYING
+  dependencies/memchr-2.8.3/LICENSE-MIT
+memmap2 0.9.11 — MIT OR Apache-2.0
+  dependencies/memmap2-0.9.11/LICENSE-APACHE
+  dependencies/memmap2-0.9.11/LICENSE-MIT
+  dependencies/memmap2-0.9.11/SOURCE-NOTICES.txt
+miniz_oxide 0.8.9 — MIT OR Zlib OR Apache-2.0
+  dependencies/miniz_oxide-0.8.9/LICENSE
+  dependencies/miniz_oxide-0.8.9/LICENSE-APACHE.md
+  dependencies/miniz_oxide-0.8.9/LICENSE-MIT.md
+  dependencies/miniz_oxide-0.8.9/LICENSE-ZLIB.md
+miniz_oxide 0.9.1 — MIT OR Zlib OR Apache-2.0
+  dependencies/miniz_oxide-0.9.1/LICENSE
+  dependencies/miniz_oxide-0.9.1/LICENSE-APACHE.md
+  dependencies/miniz_oxide-0.9.1/LICENSE-MIT.md
+  dependencies/miniz_oxide-0.9.1/LICENSE-ZLIB.md
+moxcms 0.8.1 — BSD-3-Clause OR Apache-2.0
+  dependencies/moxcms-0.8.1/LICENSE-APACHE.md
+  dependencies/moxcms-0.8.1/LICENSE.md
+  dependencies/moxcms-0.8.1/SOURCE-NOTICES.txt
+naga 29.0.4 — MIT OR Apache-2.0
+  dependencies/naga-29.0.4/LICENSE.APACHE
+  dependencies/naga-29.0.4/LICENSE.MIT
+naga_oil 0.22.0 — MIT OR Apache-2.0
+  dependencies/naga_oil-0.22.0/LICENSE-APACHE
+  dependencies/naga_oil-0.22.0/LICENSE-MIT
+nonmax 0.5.5 — MIT OR Apache-2.0
+  dependencies/nonmax-0.5.5/LICENSE-APACHE
+  dependencies/nonmax-0.5.5/LICENSE-MIT
+nu-ansi-term 0.50.3 — MIT
+  dependencies/nu-ansi-term-0.50.3/LICENSE
+num-bigint 0.4.8 — MIT OR Apache-2.0
+  dependencies/num-bigint-0.4.8/LICENSE-APACHE
+  dependencies/num-bigint-0.4.8/LICENSE-MIT
+  dependencies/num-bigint-0.4.8/SOURCE-NOTICES.txt
+num-integer 0.1.47 — MIT OR Apache-2.0
+  dependencies/num-integer-0.1.47/LICENSE-APACHE
+  dependencies/num-integer-0.1.47/LICENSE-MIT
+  dependencies/num-integer-0.1.47/SOURCE-NOTICES.txt
+num-rational 0.4.2 — MIT OR Apache-2.0
+  dependencies/num-rational-0.4.2/LICENSE-APACHE
+  dependencies/num-rational-0.4.2/LICENSE-MIT
+  dependencies/num-rational-0.4.2/SOURCE-NOTICES.txt
+num-traits 0.2.19 — MIT OR Apache-2.0
+  dependencies/num-traits-0.2.19/LICENSE-APACHE
+  dependencies/num-traits-0.2.19/LICENSE-MIT
+  dependencies/num-traits-0.2.19/SOURCE-NOTICES.txt
+offset-allocator 0.2.0 — MIT
+  dependencies/offset-allocator-0.2.0/LICENSE-MIT
+ogg 0.8.0 — BSD-3-Clause
+  dependencies/ogg-0.8.0/LICENSE
+  dependencies/ogg-0.8.0/SOURCE-NOTICES.txt
+once_cell 1.21.4 — MIT OR Apache-2.0
+  dependencies/once_cell-1.21.4/LICENSE-APACHE
+  dependencies/once_cell-1.21.4/LICENSE-MIT
+ordered-float 5.5.0 — MIT
+  dependencies/ordered-float-5.5.0/LICENSE-MIT
+parking 2.2.1 — Apache-2.0 OR MIT
+  dependencies/parking-2.2.1/LICENSE-APACHE
+  dependencies/parking-2.2.1/LICENSE-MIT
+  dependencies/parking-2.2.1/LICENSE-THIRD-PARTY
+parking_lot 0.12.5 — MIT OR Apache-2.0
+  dependencies/parking_lot-0.12.5/LICENSE-APACHE
+  dependencies/parking_lot-0.12.5/LICENSE-MIT
+  dependencies/parking_lot-0.12.5/SOURCE-NOTICES.txt
+parking_lot_core 0.9.12 — MIT OR Apache-2.0
+  dependencies/parking_lot_core-0.9.12/LICENSE-APACHE
+  dependencies/parking_lot_core-0.9.12/LICENSE-MIT
+  dependencies/parking_lot_core-0.9.12/SOURCE-NOTICES.txt
+parlance 0.1.0 — Apache-2.0 OR MIT
+  dependencies/parlance-0.1.0/LICENSE-APACHE
+  dependencies/parlance-0.1.0/LICENSE-MIT
+  dependencies/parlance-0.1.0/SOURCE-NOTICES.txt
+parley 0.9.0 — Apache-2.0 OR MIT
+  dependencies/parley-0.9.0/LICENSE-APACHE
+  dependencies/parley-0.9.0/LICENSE-MIT
+  dependencies/parley-0.9.0/SOURCE-NOTICES.txt
+parley_data 0.9.0 — Apache-2.0 OR MIT
+  dependencies/parley_data-0.9.0/LICENSE-APACHE
+  dependencies/parley_data-0.9.0/LICENSE-MIT
+  dependencies/parley_data-0.9.0/SOURCE-NOTICES.txt
+petgraph 0.8.3 — MIT OR Apache-2.0
+  dependencies/petgraph-0.8.3/LICENSE-APACHE
+  dependencies/petgraph-0.8.3/LICENSE-MIT
+  dependencies/petgraph-0.8.3/assets/images/LICENSE.md
+pin-project 1.1.13 — Apache-2.0 OR MIT
+  dependencies/pin-project-1.1.13/LICENSE-APACHE
+  dependencies/pin-project-1.1.13/LICENSE-MIT
+  dependencies/pin-project-1.1.13/SOURCE-NOTICES.txt
+pin-project-internal 1.1.13 — Apache-2.0 OR MIT
+  dependencies/pin-project-internal-1.1.13/LICENSE-APACHE
+  dependencies/pin-project-internal-1.1.13/LICENSE-MIT
+  dependencies/pin-project-internal-1.1.13/SOURCE-NOTICES.txt
+pin-project-lite 0.2.17 — Apache-2.0 OR MIT
+  dependencies/pin-project-lite-0.2.17/LICENSE-APACHE
+  dependencies/pin-project-lite-0.2.17/LICENSE-MIT
+  dependencies/pin-project-lite-0.2.17/SOURCE-NOTICES.txt
+piper 0.2.5 — MIT OR Apache-2.0
+  dependencies/piper-0.2.5/LICENSE-APACHE
+  dependencies/piper-0.2.5/LICENSE-MIT
+png 0.18.1 — MIT OR Apache-2.0
+  dependencies/png-0.18.1/LICENSE-APACHE
+  dependencies/png-0.18.1/LICENSE-MIT
+portable-atomic 1.15.0 — Apache-2.0 OR MIT
+  dependencies/portable-atomic-1.15.0/LICENSE-APACHE
+  dependencies/portable-atomic-1.15.0/LICENSE-MIT
+  dependencies/portable-atomic-1.15.0/SOURCE-NOTICES.txt
+potential_utf 0.1.6 — Unicode-3.0
+  dependencies/potential_utf-0.1.6/LICENSE
+  dependencies/potential_utf-0.1.6/SOURCE-NOTICES.txt
+pp-rs 0.2.1 — BSD-3-Clause
+  dependencies/pp-rs-0.2.1/LICENSE
+ppv-lite86 0.2.21 — MIT OR Apache-2.0
+  dependencies/ppv-lite86-0.2.21/LICENSE-APACHE
+  dependencies/ppv-lite86-0.2.21/LICENSE-MIT
+proc-macro2 1.0.107 — MIT OR Apache-2.0
+  dependencies/proc-macro2-1.0.107/LICENSE-APACHE
+  dependencies/proc-macro2-1.0.107/LICENSE-MIT
+profiling 1.0.18 — MIT OR Apache-2.0
+  dependencies/profiling-1.0.18/LICENSE-APACHE
+  dependencies/profiling-1.0.18/LICENSE-MIT
+pxfm 0.1.30 — BSD-3-Clause OR Apache-2.0
+  dependencies/pxfm-0.1.30/LICENSE-APACHE.md
+  dependencies/pxfm-0.1.30/LICENSE.md
+  dependencies/pxfm-0.1.30/SOURCE-NOTICES.txt
+quote 1.0.47 — MIT OR Apache-2.0
+  dependencies/quote-1.0.47/LICENSE-APACHE
+  dependencies/quote-1.0.47/LICENSE-MIT
+radsort 0.1.1 — MIT OR Apache-2.0
+  dependencies/radsort-0.1.1/LICENSE-APACHE.txt
+  dependencies/radsort-0.1.1/LICENSE-MIT.txt
+rand 0.10.2 — MIT OR Apache-2.0
+  dependencies/rand-0.10.2/COPYRIGHT
+  dependencies/rand-0.10.2/LICENSE-APACHE
+  dependencies/rand-0.10.2/LICENSE-MIT
+  dependencies/rand-0.10.2/SOURCE-NOTICES.txt
+rand 0.9.5 — MIT OR Apache-2.0
+  dependencies/rand-0.9.5/COPYRIGHT
+  dependencies/rand-0.9.5/LICENSE-APACHE
+  dependencies/rand-0.9.5/LICENSE-MIT
+  dependencies/rand-0.9.5/SOURCE-NOTICES.txt
+rand_chacha 0.9.0 — MIT OR Apache-2.0
+  dependencies/rand_chacha-0.9.0/COPYRIGHT
+  dependencies/rand_chacha-0.9.0/LICENSE-APACHE
+  dependencies/rand_chacha-0.9.0/LICENSE-MIT
+  dependencies/rand_chacha-0.9.0/SOURCE-NOTICES.txt
+rand_core 0.10.1 — MIT OR Apache-2.0
+  dependencies/rand_core-0.10.1/COPYRIGHT
+  dependencies/rand_core-0.10.1/LICENSE-APACHE
+  dependencies/rand_core-0.10.1/LICENSE-MIT
+rand_core 0.9.5 — MIT OR Apache-2.0
+  dependencies/rand_core-0.9.5/COPYRIGHT
+  dependencies/rand_core-0.9.5/LICENSE-APACHE
+  dependencies/rand_core-0.9.5/LICENSE-MIT
+  dependencies/rand_core-0.9.5/SOURCE-NOTICES.txt
+rand_distr 0.6.0 — MIT OR Apache-2.0
+  dependencies/rand_distr-0.6.0/COPYRIGHT
+  dependencies/rand_distr-0.6.0/LICENSE-APACHE
+  dependencies/rand_distr-0.6.0/LICENSE-MIT
+  dependencies/rand_distr-0.6.0/SOURCE-NOTICES.txt
+raw-window-handle 0.6.2 — MIT OR Apache-2.0 OR Zlib
+  dependencies/raw-window-handle-0.6.2/LICENSE-APACHE.md
+  dependencies/raw-window-handle-0.6.2/LICENSE-MIT.md
+  dependencies/raw-window-handle-0.6.2/LICENSE-ZLIB.md
+read-fonts 0.39.2 — MIT OR Apache-2.0
+  dependencies/read-fonts-0.39.2/LICENSE-APACHE
+  dependencies/read-fonts-0.39.2/LICENSE-MIT
+  dependencies/read-fonts-0.39.2/SOURCE-NOTICES.txt
+read-fonts 0.41.0 — MIT OR Apache-2.0
+  dependencies/read-fonts-0.41.0/LICENSE-APACHE
+  dependencies/read-fonts-0.41.0/LICENSE-MIT
+  dependencies/read-fonts-0.41.0/SOURCE-NOTICES.txt
+rectangle-pack 0.4.2 — MIT/Apache-2.0
+  dependencies/rectangle-pack-0.4.2/LICENSE-APACHE
+  dependencies/rectangle-pack-0.4.2/LICENSE-MIT
+regex 1.13.1 — MIT OR Apache-2.0
+  dependencies/regex-1.13.1/LICENSE-APACHE
+  dependencies/regex-1.13.1/LICENSE-MIT
+regex-automata 0.4.18 — MIT OR Apache-2.0
+  dependencies/regex-automata-0.4.18/LICENSE-APACHE
+  dependencies/regex-automata-0.4.18/LICENSE-MIT
+regex-syntax 0.8.11 — MIT OR Apache-2.0
+  dependencies/regex-syntax-0.8.11/LICENSE-APACHE
+  dependencies/regex-syntax-0.8.11/LICENSE-MIT
+  dependencies/regex-syntax-0.8.11/src/unicode_tables/LICENSE-UNICODE
+rodio 0.22.2 — MIT OR Apache-2.0
+  dependencies/rodio-0.22.2/LICENSE-APACHE
+  dependencies/rodio-0.22.2/LICENSE-MIT
+  dependencies/rodio-0.22.2/SOURCE-NOTICES.txt
+ron 0.12.2 — MIT OR Apache-2.0
+  dependencies/ron-0.12.2/LICENSE-APACHE
+  dependencies/ron-0.12.2/LICENSE-MIT
+  dependencies/ron-0.12.2/SOURCE-NOTICES.txt
+rustc-hash 1.1.0 — Apache-2.0/MIT
+  dependencies/rustc-hash-1.1.0/LICENSE-APACHE
+  dependencies/rustc-hash-1.1.0/LICENSE-MIT
+  dependencies/rustc-hash-1.1.0/SOURCE-NOTICES.txt
+rustc_version 0.4.1 — MIT OR Apache-2.0
+  dependencies/rustc_version-0.4.1/LICENSE-APACHE
+  dependencies/rustc_version-0.4.1/LICENSE-MIT
+  dependencies/rustc_version-0.4.1/SOURCE-NOTICES.txt
+rustversion 1.0.23 — MIT OR Apache-2.0
+  dependencies/rustversion-1.0.23/LICENSE-APACHE
+  dependencies/rustversion-1.0.23/LICENSE-MIT
+scopeguard 1.2.0 — MIT OR Apache-2.0
+  dependencies/scopeguard-1.2.0/LICENSE-APACHE
+  dependencies/scopeguard-1.2.0/LICENSE-MIT
+semver 1.0.28 — MIT OR Apache-2.0
+  dependencies/semver-1.0.28/LICENSE-APACHE
+  dependencies/semver-1.0.28/LICENSE-MIT
+serde 1.0.229 — MIT OR Apache-2.0
+  dependencies/serde-1.0.229/LICENSE-APACHE
+  dependencies/serde-1.0.229/LICENSE-MIT
+serde_core 1.0.229 — MIT OR Apache-2.0
+  dependencies/serde_core-1.0.229/LICENSE-APACHE
+  dependencies/serde_core-1.0.229/LICENSE-MIT
+serde_derive 1.0.229 — MIT OR Apache-2.0
+  dependencies/serde_derive-1.0.229/LICENSE-APACHE
+  dependencies/serde_derive-1.0.229/LICENSE-MIT
+serde_json 1.0.151 — MIT OR Apache-2.0
+  dependencies/serde_json-1.0.151/LICENSE-APACHE
+  dependencies/serde_json-1.0.151/LICENSE-MIT
+  dependencies/serde_json-1.0.151/SOURCE-NOTICES.txt
+sharded-slab 0.1.7 — MIT
+  dependencies/sharded-slab-0.1.7/LICENSE
+shlex 2.0.1 — MIT OR Apache-2.0
+  dependencies/shlex-2.0.1/LICENSE-APACHE
+  dependencies/shlex-2.0.1/LICENSE-MIT
+  dependencies/shlex-2.0.1/SOURCE-NOTICES.txt
+simd-adler32 0.3.10 — MIT
+  dependencies/simd-adler32-0.3.10/LICENSE.md
+skrifa 0.42.1 — MIT OR Apache-2.0
+  dependencies/skrifa-0.42.1/LICENSE-APACHE
+  dependencies/skrifa-0.42.1/LICENSE-MIT
+skrifa 0.44.0 — MIT OR Apache-2.0
+  dependencies/skrifa-0.44.0/LICENSE-APACHE
+  dependencies/skrifa-0.44.0/LICENSE-MIT
+slab 0.4.12 — MIT
+  dependencies/slab-0.4.12/LICENSE
+slotmap 1.1.1 — Zlib
+  dependencies/slotmap-1.1.1/LICENSE
+smallvec 1.16.1 — MIT OR Apache-2.0
+  dependencies/smallvec-1.16.1/LICENSE-APACHE
+  dependencies/smallvec-1.16.1/LICENSE-MIT
+  dependencies/smallvec-1.16.1/SOURCE-NOTICES.txt
+smol_str 0.2.2 — MIT OR Apache-2.0
+  dependencies/smol_str-0.2.2/LICENSE-APACHE
+  dependencies/smol_str-0.2.2/LICENSE-MIT
+spin 0.10.1 — MIT
+  dependencies/spin-0.10.1/LICENSE
+  dependencies/spin-0.10.1/SOURCE-NOTICES.txt
+spirv 0.4.0+sdk-1.4.341.0 — Apache-2.0
+  dependencies/spirv-0.4.0+sdk-1.4.341.0/LICENSE
+stable_deref_trait 1.2.1 — MIT OR Apache-2.0
+  dependencies/stable_deref_trait-1.2.1/LICENSE-APACHE
+  dependencies/stable_deref_trait-1.2.1/LICENSE-MIT
+  dependencies/stable_deref_trait-1.2.1/SOURCE-NOTICES.txt
+stackfuture 0.3.1 — MIT
+  dependencies/stackfuture-0.3.1/LICENSE.txt
+  dependencies/stackfuture-0.3.1/SOURCE-NOTICES.txt
+static_assertions 1.1.0 — MIT OR Apache-2.0
+  dependencies/static_assertions-1.1.0/LICENSE-APACHE
+  dependencies/static_assertions-1.1.0/LICENSE-MIT
+svg_fmt 0.4.5 — MIT/Apache-2.0
+  dependencies/svg_fmt-0.4.5/LICENSE
+swash 0.2.10 — Apache-2.0 OR MIT
+  dependencies/swash-0.2.10/LICENSE-APACHE
+  dependencies/swash-0.2.10/LICENSE-MIT
+  dependencies/swash-0.2.10/SOURCE-NOTICES.txt
+syn 2.0.119 — MIT OR Apache-2.0
+  dependencies/syn-2.0.119/LICENSE-APACHE
+  dependencies/syn-2.0.119/LICENSE-MIT
+syn 3.0.6 — MIT OR Apache-2.0
+  dependencies/syn-3.0.6/LICENSE-APACHE
+  dependencies/syn-3.0.6/LICENSE-MIT
+synstructure 0.14.0 — MIT
+  dependencies/synstructure-0.14.0/LICENSE
+sys-locale 0.3.2 — MIT OR Apache-2.0
+  dependencies/sys-locale-0.3.2/LICENSE-APACHE
+  dependencies/sys-locale-0.3.2/LICENSE-MIT
+taffy 0.10.1 — MIT
+  dependencies/taffy-0.10.1/LICENSE.md
+termcolor 1.4.1 — Unlicense OR MIT
+  dependencies/termcolor-1.4.1/COPYING
+  dependencies/termcolor-1.4.1/LICENSE-MIT
+thiserror 2.0.20 — MIT OR Apache-2.0
+  dependencies/thiserror-2.0.20/LICENSE-APACHE
+  dependencies/thiserror-2.0.20/LICENSE-MIT
+thiserror-impl 2.0.20 — MIT OR Apache-2.0
+  dependencies/thiserror-impl-2.0.20/LICENSE-APACHE
+  dependencies/thiserror-impl-2.0.20/LICENSE-MIT
+thread_local 1.1.10 — MIT OR Apache-2.0
+  dependencies/thread_local-1.1.10/LICENSE-APACHE
+  dependencies/thread_local-1.1.10/LICENSE-MIT
+  dependencies/thread_local-1.1.10/SOURCE-NOTICES.txt
+tinystr 0.8.4 — Unicode-3.0
+  dependencies/tinystr-0.8.4/LICENSE
+  dependencies/tinystr-0.8.4/SOURCE-NOTICES.txt
+tinyvec 1.13.3 — Zlib OR Apache-2.0 OR MIT
+  dependencies/tinyvec-1.13.3/LICENSE-APACHE.md
+  dependencies/tinyvec-1.13.3/LICENSE-MIT.md
+  dependencies/tinyvec-1.13.3/LICENSE-ZLIB.md
+toml_datetime 1.1.1+spec-1.1.0 — MIT OR Apache-2.0
+  dependencies/toml_datetime-1.1.1+spec-1.1.0/LICENSE-APACHE
+  dependencies/toml_datetime-1.1.1+spec-1.1.0/LICENSE-MIT
+toml_edit 0.25.15+spec-1.1.0 — MIT OR Apache-2.0
+  dependencies/toml_edit-0.25.15+spec-1.1.0/LICENSE-APACHE
+  dependencies/toml_edit-0.25.15+spec-1.1.0/LICENSE-MIT
+toml_parser 1.1.3+spec-1.1.0 — MIT OR Apache-2.0
+  dependencies/toml_parser-1.1.3+spec-1.1.0/LICENSE-APACHE
+  dependencies/toml_parser-1.1.3+spec-1.1.0/LICENSE-MIT
+tracing 0.1.44 — MIT
+  dependencies/tracing-0.1.44/LICENSE
+tracing-attributes 0.1.31 — MIT
+  dependencies/tracing-attributes-0.1.31/LICENSE
+tracing-core 0.1.36 — MIT
+  dependencies/tracing-core-0.1.36/LICENSE
+  dependencies/tracing-core-0.1.36/src/spin/LICENSE
+tracing-log 0.2.0 — MIT
+  dependencies/tracing-log-0.2.0/LICENSE
+tracing-subscriber 0.3.23 — MIT
+  dependencies/tracing-subscriber-0.3.23/LICENSE
+  dependencies/tracing-subscriber-0.3.23/SOURCE-NOTICES.txt
+tracing-wasm 0.2.1 — MIT OR Apache-2.0
+  dependencies/tracing-wasm-0.2.1/LICENSE-APACHE
+  dependencies/tracing-wasm-0.2.1/LICENSE-MIT
+typeid 1.0.3 — MIT OR Apache-2.0
+  dependencies/typeid-1.0.3/LICENSE-APACHE
+  dependencies/typeid-1.0.3/LICENSE-MIT
+typewit 1.15.2 — Zlib
+  dependencies/typewit-1.15.2/LICENSE-ZLIB.md
+unicode-ident 1.0.26 — (MIT OR Apache-2.0) AND Unicode-3.0
+  dependencies/unicode-ident-1.0.26/LICENSE-APACHE
+  dependencies/unicode-ident-1.0.26/LICENSE-MIT
+  dependencies/unicode-ident-1.0.26/LICENSE-UNICODE
+unicode-segmentation 1.13.3 — MIT OR Apache-2.0
+  dependencies/unicode-segmentation-1.13.3/COPYRIGHT
+  dependencies/unicode-segmentation-1.13.3/LICENSE-APACHE
+  dependencies/unicode-segmentation-1.13.3/LICENSE-MIT
+  dependencies/unicode-segmentation-1.13.3/SOURCE-NOTICES.txt
+unicode-width 0.2.2 — MIT OR Apache-2.0
+  dependencies/unicode-width-0.2.2/COPYRIGHT
+  dependencies/unicode-width-0.2.2/LICENSE-APACHE
+  dependencies/unicode-width-0.2.2/LICENSE-MIT
+  dependencies/unicode-width-0.2.2/SOURCE-NOTICES.txt
+unicode-xid 0.2.6 — MIT OR Apache-2.0
+  dependencies/unicode-xid-0.2.6/COPYRIGHT
+  dependencies/unicode-xid-0.2.6/LICENSE-APACHE
+  dependencies/unicode-xid-0.2.6/LICENSE-MIT
+  dependencies/unicode-xid-0.2.6/SOURCE-NOTICES.txt
+utf8_iter 1.0.4 — Apache-2.0 OR MIT
+  dependencies/utf8_iter-1.0.4/COPYRIGHT
+  dependencies/utf8_iter-1.0.4/LICENSE-APACHE
+  dependencies/utf8_iter-1.0.4/LICENSE-MIT
+  dependencies/utf8_iter-1.0.4/SOURCE-NOTICES.txt
+uuid 1.26.1 — Apache-2.0 OR MIT
+  dependencies/uuid-1.26.1/LICENSE-APACHE
+  dependencies/uuid-1.26.1/LICENSE-MIT
+  dependencies/uuid-1.26.1/SOURCE-NOTICES.txt
+variadics_please 1.1.0 — MIT OR Apache-2.0
+  dependencies/variadics_please-1.1.0/LICENSE-APACHE
+  dependencies/variadics_please-1.1.0/LICENSE-MIT
+vec_map 0.8.2 — MIT/Apache-2.0
+  dependencies/vec_map-0.8.2/LICENSE-APACHE
+  dependencies/vec_map-0.8.2/LICENSE-MIT
+  dependencies/vec_map-0.8.2/SOURCE-NOTICES.txt
+version_check 0.9.5 — MIT/Apache-2.0
+  dependencies/version_check-0.9.5/LICENSE-APACHE
+  dependencies/version_check-0.9.5/LICENSE-MIT
+wasm-bindgen 0.2.128 — MIT OR Apache-2.0
+  dependencies/wasm-bindgen-0.2.128/LICENSE-APACHE
+  dependencies/wasm-bindgen-0.2.128/LICENSE-MIT
+wasm-bindgen-futures 0.4.78 — MIT OR Apache-2.0
+  dependencies/wasm-bindgen-futures-0.4.78/LICENSE-APACHE
+  dependencies/wasm-bindgen-futures-0.4.78/LICENSE-MIT
+wasm-bindgen-macro 0.2.128 — MIT OR Apache-2.0
+  dependencies/wasm-bindgen-macro-0.2.128/LICENSE-APACHE
+  dependencies/wasm-bindgen-macro-0.2.128/LICENSE-MIT
+wasm-bindgen-macro-support 0.2.128 — MIT OR Apache-2.0
+  dependencies/wasm-bindgen-macro-support-0.2.128/LICENSE-APACHE
+  dependencies/wasm-bindgen-macro-support-0.2.128/LICENSE-MIT
+wasm-bindgen-shared 0.2.128 — MIT OR Apache-2.0
+  dependencies/wasm-bindgen-shared-0.2.128/LICENSE-APACHE
+  dependencies/wasm-bindgen-shared-0.2.128/LICENSE-MIT
+weak-table 0.3.2 — MIT
+  dependencies/weak-table-0.3.2/LICENSE
+web-sys 0.3.105 — MIT OR Apache-2.0
+  dependencies/web-sys-0.3.105/LICENSE-APACHE
+  dependencies/web-sys-0.3.105/LICENSE-MIT
+web-task 1.1.3 — MIT OR Apache-2.0
+  dependencies/web-task-1.1.3/LICENSE-APACHE
+  dependencies/web-task-1.1.3/LICENSE-MIT
+web-time 1.1.0 — MIT OR Apache-2.0
+  dependencies/web-time-1.1.0/LICENSE-APACHE
+  dependencies/web-time-1.1.0/LICENSE-MIT
+  dependencies/web-time-1.1.0/SOURCE-NOTICES.txt
+wgpu 29.0.4 — MIT OR Apache-2.0
+  dependencies/wgpu-29.0.4/LICENSE.APACHE
+  dependencies/wgpu-29.0.4/LICENSE.MIT
+wgpu-core 29.0.4 — MIT OR Apache-2.0
+  dependencies/wgpu-core-29.0.4/LICENSE.APACHE
+  dependencies/wgpu-core-29.0.4/LICENSE.MIT
+wgpu-core-deps-wasm 29.0.4 — MIT OR Apache-2.0
+  dependencies/wgpu-core-deps-wasm-29.0.4/LICENSE.APACHE
+  dependencies/wgpu-core-deps-wasm-29.0.4/LICENSE.MIT
+wgpu-hal 29.0.4 — MIT OR Apache-2.0
+  dependencies/wgpu-hal-29.0.4/LICENSE.APACHE
+  dependencies/wgpu-hal-29.0.4/LICENSE.MIT
+wgpu-naga-bridge 29.0.4 — MIT OR Apache-2.0
+  dependencies/wgpu-naga-bridge-29.0.4/LICENSE.APACHE
+  dependencies/wgpu-naga-bridge-29.0.4/LICENSE.MIT
+wgpu-types 29.0.4 — MIT OR Apache-2.0
+  dependencies/wgpu-types-29.0.4/LICENSE.APACHE
+  dependencies/wgpu-types-29.0.4/LICENSE.MIT
+winit 0.30.13 — Apache-2.0
+  dependencies/winit-0.30.13/LICENSE
+  dependencies/winit-0.30.13/SOURCE-NOTICES.txt
+winnow 1.0.4 — MIT
+  dependencies/winnow-1.0.4/LICENSE-MIT
+writeable 0.6.4 — Unicode-3.0
+  dependencies/writeable-0.6.4/LICENSE
+  dependencies/writeable-0.6.4/SOURCE-NOTICES.txt
+yazi 0.2.1 — Apache-2.0 OR MIT
+  dependencies/yazi-0.2.1/LICENSE-APACHE
+  dependencies/yazi-0.2.1/LICENSE-MIT
+yoke 0.8.3 — Unicode-3.0
+  dependencies/yoke-0.8.3/LICENSE
+  dependencies/yoke-0.8.3/SOURCE-NOTICES.txt
+yoke-derive 0.8.3 — Unicode-3.0
+  dependencies/yoke-derive-0.8.3/LICENSE
+  dependencies/yoke-derive-0.8.3/SOURCE-NOTICES.txt
+zeno 0.3.3 — Apache-2.0 OR MIT
+  dependencies/zeno-0.3.3/LICENSE-APACHE
+  dependencies/zeno-0.3.3/LICENSE-MIT
+zerocopy 0.8.57 — BSD-2-Clause OR Apache-2.0 OR MIT
+  dependencies/zerocopy-0.8.57/LICENSE-APACHE
+  dependencies/zerocopy-0.8.57/LICENSE-BSD
+  dependencies/zerocopy-0.8.57/LICENSE-MIT
+  dependencies/zerocopy-0.8.57/SOURCE-NOTICES.txt
+zerocopy-derive 0.8.57 — BSD-2-Clause OR Apache-2.0 OR MIT
+  dependencies/zerocopy-derive-0.8.57/LICENSE-APACHE
+  dependencies/zerocopy-derive-0.8.57/LICENSE-BSD
+  dependencies/zerocopy-derive-0.8.57/LICENSE-MIT
+  dependencies/zerocopy-derive-0.8.57/SOURCE-NOTICES.txt
+zerofrom 0.1.8 — Unicode-3.0
+  dependencies/zerofrom-0.1.8/LICENSE
+  dependencies/zerofrom-0.1.8/SOURCE-NOTICES.txt
+zerofrom-derive 0.1.8 — Unicode-3.0
+  dependencies/zerofrom-derive-0.1.8/LICENSE
+  dependencies/zerofrom-derive-0.1.8/SOURCE-NOTICES.txt
+zerotrie 0.2.5 — Unicode-3.0
+  dependencies/zerotrie-0.2.5/LICENSE
+  dependencies/zerotrie-0.2.5/SOURCE-NOTICES.txt
+zerovec 0.11.8 — Unicode-3.0
+  dependencies/zerovec-0.11.8/LICENSE
+  dependencies/zerovec-0.11.8/SOURCE-NOTICES.txt
+zerovec-derive 0.11.6 — Unicode-3.0
+  dependencies/zerovec-derive-0.11.6/LICENSE
+  dependencies/zerovec-derive-0.11.6/SOURCE-NOTICES.txt
+zlib-rs 0.6.8 — Zlib
+  dependencies/zlib-rs-0.6.8/LICENSE
+zmij 1.0.23 — MIT
+  dependencies/zmij-1.0.23/LICENSE-MIT

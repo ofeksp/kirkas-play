@@ -1,0 +1,239 @@
+Upstream file: parley-0.9.0/src/analysis/cluster.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/analysis/mod.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/bidi.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/builder.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/context.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/convert.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/editing/cursor.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/editing/editor.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/editing/mod.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/editing/selection.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/font.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/inline_box.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/accessibility.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/alignment.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/cluster.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/data.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/glyph.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/layout.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/line.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/line_break.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/mod.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/layout/run.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/lib.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/lru_cache.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/resolve/mod.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/resolve/range.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/resolve/tree.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/setting.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/shape/cache.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/shape/mod.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/style/brush.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/style/font.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/style/mod.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/style/styleset.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/tests/mod.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/tests/test_analysis.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/tests/test_builders.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/tests/utils/asserts.rs
+
+// Copyright 2025 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/tests/utils/mod.rs
+
+// Copyright 2024 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: parley-0.9.0/src/util.rs
+
+// Copyright 2021 the Parley Authors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+

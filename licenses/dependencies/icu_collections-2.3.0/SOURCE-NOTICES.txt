@@ -1,0 +1,646 @@
+Upstream file: icu_collections-2.3.0/benches/codepointtrie.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/benches/iai_cpt.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/benches/inv_list.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/benches/tries/gc_fast.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/benches/tries/gc_small.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/benches/tries/mod.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/char16trie/mod.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/char16trie/trie.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointinvlist/builder.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointinvlist/conversions.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointinvlist/cpinvlist.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointinvlist/mod.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointinvlist/utils.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointinvliststringlist/mod.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/cptrie.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/error.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/impl_const.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/mod.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/planes.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/serde.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/codepointtrie/toml.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/iterator_utils.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/src/lib.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/char16trie.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/cpt.rs
+
+// This file is part of ICU4X. For terms of use, please see the file
+// called LICENSE at the top level of the ICU4X source tree
+// (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/empty.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: empty.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/months.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: months.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_a.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_a.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_a_ab.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_a_ab.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_branches.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_branches.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_compact.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_compact.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_long_branch.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_long_branch.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_long_sequence.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_long_sequence.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/char16trie/test_shortest_branch.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: test_shortest_branch.toml
+#
+# machine-generated by: ucharstrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.16.toml
+
+# This file is part of ICU4X. For terms of use, please see the file
+# called LICENSE at the top level of the ICU4X source tree
+# (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: free-blocks.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.32.toml
+
+# This file is part of ICU4X. For terms of use, please see the file
+# called LICENSE at the top level of the ICU4X source tree
+# (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: free-blocks.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.8.toml
+
+# This file is part of ICU4X. For terms of use, please see the file
+# called LICENSE at the top level of the ICU4X source tree
+# (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: free-blocks.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.small16.toml
+
+# This file is part of ICU4X. For terms of use, please see the file
+# called LICENSE at the top level of the ICU4X source tree
+# (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/free-blocks.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: free-blocks.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/grow-data.16.toml
+
+# This file is part of ICU4X. For terms of use, please see the file
+# called LICENSE at the top level of the ICU4X source tree
+# (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/grow-data.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: grow-data.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/grow-data.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: grow-data.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/grow-data.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: grow-data.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/grow-data.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: grow-data.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/planes.toml
+
+# This file is part of ICU4X. For terms of use, please see the file
+# called LICENSE at the top level of the ICU4X source tree
+# (online at: https://github.com/unicode-org/icu4x/blob/main/LICENSE ).
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-empty.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-empty.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-empty.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-empty.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-empty.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-empty.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-empty.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-empty.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-single-value.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-single-value.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-single-value.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-single-value.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-single-value.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-single-value.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set-single-value.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set-single-value.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set1.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set1.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set1.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set1.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set1.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set1.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set1.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set1.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set2-overlap.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set2-overlap.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set2-overlap.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set2-overlap.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set2-overlap.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set2-overlap.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set3-initial-9.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set3-initial-9.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set3-initial-9.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set3-initial-9.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set3-initial-9.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set3-initial-9.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/set3-initial-9.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: set3-initial-9.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/short-all-same.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: short-all-same.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/short-all-same.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: short-all-same.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/short-all-same.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: short-all-same.small16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/small0-in-fast.16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: small0-in-fast.16
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/small0-in-fast.32.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: small0-in-fast.32
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/small0-in-fast.8.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: small0-in-fast.8
+#
+# machine-generated by: ucptrietest.c
+
+
+Upstream file: icu_collections-2.3.0/tests/data/cpt/small0-in-fast.small16.toml
+
+# Copyright (C) 2021 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+#
+# file name: small0-in-fast.small16
+#
+# machine-generated by: ucptrietest.c
+

@@ -1,0 +1,210 @@
+Upstream file: gilrs-core-0.6.8/src/platform/default/ff.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/default/gamepad.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/default/mod.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/linux/ff.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/linux/gamepad.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/linux/ioctl.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/linux/mod.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+// Copyright 2016 GilRs Developers
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/linux/udev.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/macos/ff.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/macos/gamepad.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/macos/io_kit.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/macos/mod.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/mod.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/wasm/ff.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/wasm/gamepad.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/windows_wgi/ff.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/windows_wgi/gamepad.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/windows_wgi/mod.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/windows_xinput/ff.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/windows_xinput/gamepad.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+
+
+Upstream file: gilrs-core-0.6.8/src/platform/windows_xinput/mod.rs
+
+// Copyright 2016-2018 Mateusz Sieczko and other GilRs Developers
+//
+// Licensed under the Apache License, Version 2.0, <LICENSE-APACHE or
+// http://apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT or
+// http://opensource.org/licenses/MIT>, at your option. This file may not be
+// copied, modified, or distributed except according to those terms.
+

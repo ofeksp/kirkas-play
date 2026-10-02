@@ -1,0 +1,71 @@
+Upstream file: rodio-0.22.2/src/lib.rs
+
+//! use rodio::Source;
+//! use std::time::Duration;
+//!
+//! // Repeats the first five seconds of the sound forever.
+//! # let source = rodio::source::SineWave::new(440.0);
+//! let source = source.take_duration(Duration::from_secs(5)).repeat_infinite();
+//! ```
+//!
+//! ## Decoder Backends
+//!
+//! [Symphonia](https://github.com/pdeljanov/Symphonia) is the default decoder library.
+//! Rodio supports enabling all of Symphonia's codecs using the `symphonia-all` feature
+//! or enabling specific codecs using one of the `symphonia-{codec name}` features.
+//! By default, decoders for the most common file types (flac, mp3, mp4, vorbis, wav) are enabled.
+//!
+//! ### Alternative Decoders
+//!
+//! Alternative decoder libraries are available for some filetypes:
+//!
+//! - claxon (flac)
+//! - hound (wav)
+//! - lewton (vorbis)
+//! - minimp3 (mp3)
+//!
+//! Symphonia is recommended for most usage. However, the alternative decoders are all licensed
+//! under either MIT or Apache 2.0 while Symphonia is licensed under MPL-2.0, so
+//! this may be a factor if you have strict licensing requirements.
+//!
+//! If you enable one of these, you may want to set `default-features = false`
+//! to avoid adding extra crates to your binary.
+//! See the [available feature flags](https://docs.rs/crate/rodio/latest/features) for all options.
+//!
+//! ## Optional Features
+//!
+//! Rodio provides several optional features that are guarded with feature gates.
+//!
+//! ### Feature "tracing"
+//!
+//! The "tracing" feature replaces the print to stderr when a stream error happens with a
+//! recording an error event with tracing.
+//!
+//! ### Feature "noise"
+//!
+//! The "noise" feature adds support for white and pink noise sources. This feature requires the
+//! "rand" crate.
+//!
+//! ### Feature "playback"
+//!
+//! The "playback" feature adds support for playing audio. This feature requires the "cpal" crate.
+//!
+//! ### Feature "64bit"
+//!
+//! The "64bit" feature enables 64-bit sample precision using `f64` for audio samples and most
+//! internal calculations. By default, rodio uses 32-bit floats (`f32`), which offers better
+//! performance and is sufficient for most use cases. The 64-bit mode addresses precision drift
+//! when chaining many audio operations together and in long-running signal generators where
+//! phase errors compound over time.
+//!
+//! ## How it works under the hood
+//!
+//! Rodio spawns a background thread that is dedicated to reading from the sources and sending
+//! the output to the device. Whenever you give up ownership of a [`Source`] in order to play it,
+//! it is sent to this background thread where it will be read by rodio.
+//!
+//! All the sounds are mixed together by rodio before being sent to the operating system or the
+//! hardware. Therefore, there is no restriction on the number of sounds that play simultaneously or
+//! on the number of sinks that can be created (except for the fact that creating too many will slow
+//! down your program).
+

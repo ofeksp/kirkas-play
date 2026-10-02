@@ -1,0 +1,19 @@
+Upstream file: font-types-0.11.3/src/name_id.rs
+
+    /// Copyright notice.
+
+
+Upstream file: font-types-0.11.3/src/name_id.rs
+
+    /// Trademark; this is used to save any trademark notice/information for this font.
+    ///
+    /// Such information should be based on legal advice. This is distinctly separate from the copyright.
+
+
+Upstream file: font-types-0.11.3/src/name_id.rs
+
+    /// License description.
+    ///
+    /// A description of how the font may be legally used, or different example scenarios for licensed use.
+    /// This field should be written in plain language, not legalese.
+

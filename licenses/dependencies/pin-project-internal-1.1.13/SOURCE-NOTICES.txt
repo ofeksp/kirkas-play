@@ -1,0 +1,39 @@
+Upstream file: pin-project-internal-1.1.13/src/error.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/lib.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/pin_project/args.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/pin_project/attribute.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/pin_project/derive.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/pin_project/mod.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/pinned_drop.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
+
+Upstream file: pin-project-internal-1.1.13/src/utils.rs
+
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
