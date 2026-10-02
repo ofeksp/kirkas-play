@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#181b2d">
+  <meta name="description" content="Play Kirkas, a carnival puzzle game. A browser test version with touch controls and local saves.">
+  <title>Kirkas · Browser playtest</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./shell.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Kirkas home">Kirkas <span>browser playtest</span></a>
+    <button id="menu-open" class="secondary" aria-haspopup="dialog">Settings &amp; saves</button>
+  </header>
+  <main>
+    <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+      <p class="eyebrow">Step into the big top</p>
+      <h1 id="welcome-title">Every swipe<br>is a performance.</h1>
+      <p>Build your troupe. Make your moves. Keep the show going.</p>
+      <button id="start" class="primary">Load the game</button>
+      <div id="loading" hidden role="status">
+        <p id="load-message">Loading the game…</p>
+        <progress id="load-progress" aria-label="Game download"></progress>
+      </div>
+      <p id="load-error" class="error" role="alert" hidden></p>
+      <p class="small">This is a test version. Your run saves in this browser.<br>Export a backup to keep it safe or move to another device.</p>
+      <p class="small"><a href="./licenses/index.html" target="_blank" rel="noopener">Credits &amp; licenses</a></p>
+    </section>
+    <section id="play-area" hidden aria-label="Game">
+      <p id="layout-note" class="layout-note" hidden>Wide screen: swipe this area sideways to reach the rest of the game.</p>
+      <div id="stage-scroll" tabindex="0" aria-label="Game viewport; scroll to reach all controls">
+        <div id="canvas-host"><canvas id="kirkas-canvas" tabindex="0" aria-label="Kirkas game board. Use the direction buttons below, or swipe the board. Game menus are drawn inside this canvas."></canvas></div>
+      </div>
+      <p id="save-status" class="save-status" role="status" aria-live="polite"></p>
+      <nav id="controls" class="controls" aria-label="Game controls">
+        <div class="direction-pad" role="group" aria-label="Swipe direction">
+          <button data-code="ArrowUp" data-key="ArrowUp" class="up" aria-label="Swipe up">↑</button>
+          <button data-code="ArrowLeft" data-key="ArrowLeft" class="left" aria-label="Swipe left">←</button>
+          <button data-code="ArrowDown" data-key="ArrowDown" class="down" aria-label="Swipe down">↓</button>
+          <button data-code="ArrowRight" data-key="ArrowRight" class="right" aria-label="Swipe right">→</button>
+        </div>
+        <div class="action-pad">
+          <button data-code="KeyZ" data-key="z">Undo</button>
+          <button data-code="KeyX" data-key="x">Trapdoor</button>
+          <button data-code="Escape" data-key="Escape">Back / Cancel</button>
+          <button data-code="KeyH" data-key="h">Help</button>
+        </div>
+      </nav>
+    </section>
+  </main>
+  <dialog id="settings" aria-labelledby="settings-title">
+    <div class="dialog-heading"><h2 id="settings-title">Make yourself at home</h2><button id="menu-close" aria-label="Close settings">✕</button></div>
+    <p class="small">Swipe the board or use the arrows. Tap a Performer for details; drag it to change its order. Some menus use a wide view: scroll sideways to reach every choice.</p>
+    <div class="settings-grid">
+      <button id="audio" disabled>Enable sound</button>
+      <button id="motion" disabled aria-pressed="false">Reduce motion</button>
+      <button id="wide" disabled aria-pressed="false">Wide view</button>
+    </div>
+    <h3>Your run, your browser</h3>
+    <p class="small">Saving is automatic. Browser cleanup or private browsing can remove it. A downloaded backup can be imported on another device.</p>
+    <div class="settings-grid"><button id="export" disabled>Export backup</button><button id="import" disabled>Import backup</button></div>
+    <input id="import-file" type="file" accept=".json,application/json" hidden>
+    <div id="import-confirm" hidden>
+      <p>Replace this browser’s current run with <strong id="import-name"></strong>? Your current save will be kept as a local backup.</p>
+      <div class="settings-grid"><button id="import-commit" class="primary">Replace &amp; reload</button><button id="import-cancel">Keep current run</button></div>
+    </div>
+    <p id="settings-status" role="status" aria-live="polite"></p>
+    <p class="small">Canvas menus require vision and touch or a pointer. These browser controls support keyboard navigation and screen readers; the game itself is not yet fully screen-reader accessible.</p>
+    <p class="small"><a href="./licenses/index.html" target="_blank" rel="noopener">Credits &amp; licenses</a> · <a href="./THIRD-PARTY-NOTICES.txt" target="_blank" rel="noopener">Plain text notices</a></p>
+  </dialog>
+  <noscript><p class="error">JavaScript is required to play Kirkas.</p></noscript>
+</body>
+</html>
